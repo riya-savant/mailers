@@ -1,0 +1,345 @@
+- var ctaLink = deeplink
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    | &#x9;
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    | &#x9;
+    title Confirmation
+    | &#x9;
+    link(rel="preconnect", href="https://fonts.gstatic.com")
+    |
+    link(href='https://fonts.googleapis.com/css?family=Poppins&display=swap', rel='stylesheet')
+    | &#x9;
+    style.
+      tr,
+      td{
+      margin: 0;
+      padding: 0;
+      text-align: left
+      }
+      body {
+      margin: 0;
+      padding: 0;
+      font-size: 0;
+      line-height: 0;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+      color: #000000;
+      }
+      table {
+      border-spacing: 0;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+      }
+      table td {
+      border-collapse: collapse;
+      }
+      img {
+      -ms-interpolation-mode: bicubic;
+      }
+      .container600 {
+      width: 600px;
+      max-width: 100%;
+      }
+      .line {
+      width: 70px;
+      }
+      @media all and (max-width: 599px) {
+      .container600 {
+      width: 100% !important;
+      }
+      .line {
+      display: none;
+      }
+      .font20 {
+      font-size: 20px;
+      }
+      }
+    //if gte mso 9
+      style.
+        .ol {
+        width: 100%;
+        }
+  body(style='')
+    center
+      //if gte mso 9
+        table(width='600', cellpadding='0', cellspacing='0')
+          tbody
+            tr
+              td
+      | &#x9;&#x9;
+      table.container600(cellpadding='0', cellspacing='0', border='0', width='100%', style='width:calc(100%);max-width:calc(600px);  margin: 0 auto')
+        tbody
+          tr
+            td(width='100%', style='text-align: left;')
+              table(cellpadding='0', cellspacing='0', border='0', width='100%', style='width:calc(100%);max-width:calc(600px); border-bottom: 0; background: #fdf6ed; padding: 0 25px;  margin: 0 auto')
+                tbody
+                  tr
+                    td(width='100%', style='text-align: left; padding: 20px 0;')
+                      table(width='100%', cellpadding='0', cellspacing='0', style='min-width:100%; padding: 10px 0')
+                        tbody
+                          tr
+                            td(style='text-align:right;')
+                              img(style='width: 180px;', alt='', src='{{plan_info.logo}}')
+          tr
+            td(width='100%', style='text-align: left;')
+              table(cellpadding='0', cellspacing='0', border='0', width='100%', style='width:calc(100%);max-width:calc(600px); border-bottom: 0; background: #f2eccd; padding: 30px 25px 0 25px;  margin: 0 auto')
+                tbody                 
+                  tr
+                    td(width='100%')
+                      table(width='100%', cellpadding='0', cellspacing='0', style='min-width:100%;')
+                        tbody
+                          tr
+                            td(style='padding: 20px 23px; border-left: 1px solid #000; border-right: 1px solid #000;  marging-bottom: 15px; border-top: 5px solid #000; background: #f2eccd')
+                              span(style='font-size: 30px; font-weight: 500; line-height: 40px; font-family: Poppins, sans-serif') Hi, {{customer_name}}
+                  tr       
+                    td(style=' background: #f2eccd')
+                      table(width='100%', cellpadding='0', cellspacing='0', style='min-width:100%;')
+                        tbody
+                          tr                
+                           td(style='border-left: 1px solid #000; border-right: 1px solid #000; padding: 0 23px;')
+                             span(style='font-size: 20px; color: #000000; line-height: 30px; font-family: Poppins, sans-serif') Thank you for being a 1mg Care Plan member. Please note that your membership expires on {{expiry_date}}, and will be auto renewed.
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  |                                      
+                  if saving_so_far        
+                    tr
+                      td(width='100%', style='text-align: left; padding-top: 20px; padding: 0 23px; border-left: 1px solid #000; border-right: 1px solid #000;  background: #f2eccd')
+                        table(width='100%', cellpadding='0', cellspacing='0', style='min-width:100%; padding-bottom: 20px;')
+                          tbody
+                            tr
+                                td
+                                span(style='font-size: 21px; font-weight: 600; color: #000000; line-height: 26px; font-family: Poppins, sans-serif') Your total savings so far
+                  | 
+                  if saving_so_far          
+                    tr
+                      td(width='100%', style='text-align: left; padding: 0; border-left: 1px solid #000; border-right: 1px solid #000;  background: #f2eccd')
+                        table(width='100%', cellpadding='0', cellspacing='0', style='min-width:100%; margin-top: 15px;')
+                          tbody
+                            tr
+                              td
+                                div(style='font-size: 60px; font-weight: bold; line-height: 70px; color: #208376; text-align: center; font-family: Poppins, sans-serif') &#x20B9; {{saving_so_far}}
+                            |                   
+                            tr
+                              td(width='100%', style='text-align: center; background: #f2eccd')
+                                table(width='100%', cellpadding='0', cellspacing='0', style='min-width:100%; padding-bottom: 20px;')
+                                  tbody
+                                    tr
+                                      td(style='text-align: center; padding: 20px;')
+                                        img(style='margin: 0 auto; width: 50px;', alt='', src='https://res.cloudinary.com/du8msdgbj/image/upload/v1579864965/marketing/zjekc8mnzvlg12uvkkoz.png')
+                                      |
+                                      td
+                                        div(style='font-size: 20px; padding-block: 20px; line-height: 24px; text-align: center; font-family: Poppins, sans-serif') That&rsquo;s mighty big saving you&rsquo;ve made so far
+                                      |
+                                      td(style='text-align: center; padding: 20px;')
+                                        img(style='margin: 0 auto; width: 50px;', alt='', src='https://res.cloudinary.com/du8msdgbj/image/upload/v1579864965/marketing/zjekc8mnzvlg12uvkkoz.png')
+                  |   
+                  tr
+                    td(width='100%', style='text-align: left; background: #f2eccd')
+                      table(width='100%', cellpadding='0', cellspacing='0', style='min-width:100%; ')
+                        tbody
+                          tr
+                            td(style='padding: 20px 23px 0 23px; border-left: 1px solid #000; border-right: 1px solid #000; ')
+                              span(style='font-size: 32px; font-weight: bold; color: #000000; line-height: 40px; font-family: Poppins, sans-serif') Your Plan will be Auto Renewed
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  |  
+                  tr
+                    td(width='100%', style='text-align: left; background: #f2eccd; padding: 20px 0 40px 0; border-left: 1px solid #000; border-right: 1px solid #000; ')
+                      table(width='100%', cellpadding='0', cellspacing='0', style='min-width:100%')
+                        tbody
+                          tr
+                            td(style='text-align: left; padding: 0 23px 10px 23px;')
+                              span(style='font-size: 20px; color: #000000; line-height: 30px; font-family: Poppins, sans-serif') To ensure that you continue saving, we will autorenew your membership on {{expiry_date}} for the next 6 months.
+                          tr
+                            td(style='text-align: left; padding: 0 23px 20px 23px; border-bottom: 1px solid #000;:')
+                              span(style='font-size: 20px; color: #000000; line-height: 30px; font-family: Poppins, sans-serif') You will be charged the subscription fee automatically from your 1mgCash wallet and saved payment mode
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  |    
+          tr
+            td(width='100%', style='text-align: left;')
+              table(cellpadding='0', cellspacing='0', border='0', width='100%', style='width:calc(100%);max-width:calc(600px); background: #fdf6ed; border-bottom: 0; padding: 0 25px;  margin: 0 auto')
+                tbody                           
+                  tr
+                    td(width='100%', style='text-align: left; margin-bottom: 20px; padding: 10px 20px 20px 20px; border-left: 1px solid #000; border-right: 1px solid #000; background: #fdf6ed')
+                      table(width='100%', cellpadding='0', cellspacing='0', style='min-width:100%; text-align: left; padding-top: 40px;')
+                        tbody
+                          tr
+                            td
+                              span.font20(style='font-size: 30px; font-weight: bold; color: #000000; line-height: 36px; font-family: Poppins, sans-serif') Auto Renewal Perks
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  |    
+                  each i in [1, 2, 3]               
+                    tr
+                        td(width='100%', style=' padding: 20px 0 0 20px; border-left: 1px solid #000; border-right: 1px solid #000; background: #fdf6ed')
+                          table(width='100%', cellpadding='0', cellspacing='0', style='min-width:100%;')
+                            tbody
+                              tr
+                                td(style='vertical-align: top; ')
+                                  img(style='width: 50px; margin-right: 20px;', alt='', src='#{i.image}')
+                                |                             
+                                td(style=' width: 100%; padding-right: 50px;')
+                                  table(width='100%', cellpadding='0', cellspacing='0', style='min-width:100%;')
+                                    tbody                  
+                                      tr
+                                        td
+                                          span(style='font-size: 20px; font-weight: 500; line-height: 30px; text-align: center;') #{i.heading}
+                                      |                 
+                                      tr
+                                        td(style='padding-top: 2px;')
+                                          span(style='font-size: 20px; color: #8e8b8b; line-height: 30px; text-align: center;') #{i.description}
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  |  
+                  tr
+                    td(width='100%', style='text-align: left; padding-top: 50px; background: #fdf6ed; border-left: 1px solid #000; border-right: 1px solid #000;')
+                      table(width='100%', cellpadding='0', cellspacing='0', style='min-width:100%;')
+                        tbody
+                          tr
+                            td
+                              span(style='font-size: 24px; padding: 0 20px; font-weight: bold; color: #000000; line-height: 26px;') 
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            td
+                              div.line(style='background: #000000; height: 2px; float: right;') 
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  |   
+                  tr
+                    td(width='100%', style='text-align: left; padding: 0 25px 20px 25px; background: #fdf6ed; border-left: 1px solid #000; border-right: 1px solid #000;')
+                      table(width='100%', cellpadding='0', cellspacing='0', style='min-width:100%; text-align: left; padding-top: 40px;')
+                        tbody
+                          tr
+                            td(styele='border-left: 1px solid #000; border-right: 1px solid #000;')
+                              span.font20(style='font-size: 30px; font-weight: bold; color: #000000; line-height: 36px; font-family: Poppins, sans-serif') Satisfied with Auto Renewal?
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  |        
+                  tr
+                    td(width='100%', style='text-align: left; padding: 15px 25px 40px 25px;  background: #fdf6ed; border-left: 1px solid #000; border-right: 1px solid #000;')
+                      table(width='100%', cellpadding='0', cellspacing='0', style='min-width:100%')
+                        tbody
+                          tr
+                            td(styele='border-left: 1px solid #000; border-right: 1px solid #000;')
+                              a(href='{{not_satisfied_link}}', style='border: 3px solid #ee5335; cursor: pointer; display: block; border-radius: 3px;  padding: 15px; text-decoration: none; color: #ee5335; text-align: center;')
+                                span(style='font-size: 26px;  line-height: 30px; font-family: Poppins, sans-serif') N0, I AM NOT SATISFIED
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  |       
+                  tr
+                    td(width='100%', style='text-align: left; margin: 20px 0 20px 0; border-top: 1px solid #000; padding: 20px 20px 20px 20px; background: #fdf6ed; border-left: 1px solid #000; border-right: 1px solid #000;')
+                      table(width='100%', cellpadding='0', cellspacing='0', style='min-width:100%; text-align: left; padding-top: 40px;')
+                        tbody
+                          tr
+                            td(styele='border-left: 1px solid #000; border-right: 1px solid #000;')
+                              span.font20(style='font-size: 30px; font-weight: bold; color: #000000; line-height: 36px; font-family: Poppins, sans-serif') Benefits of 1mg care plan
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  |    
+                  each i in [1, 2, 3]               
+                    tr
+                        td(width='100%', style=' padding: 20px 0 0 20px; background: #fdf6ed; border-left: 1px solid #000; border-right: 1px solid #000;')
+                          table(width='100%', cellpadding='0', cellspacing='0', style='min-width:100%;')
+                            tbody
+                              tr
+                                td(style='vertical-align: top; ')
+                                  img(style='width: 50px; margin-right: 20px;', alt='', src='#{i.template_image}')
+                                |                             
+                                td(style=' width: 100%; padding-right: 50px;')
+                                  table(width='100%', cellpadding='0', cellspacing='0', style='min-width:100%;')
+                                    tbody                  
+                                      tr
+                                        td
+                                          span(style='font-size: 20px; font-weight: 500; line-height: 30px; text-align: center; font-family: Poppins, sans-serif') #{i.heading}
+                                      |                 
+                                      tr
+                                        td(style='padding-top: 2px;')
+                                          span(style='font-size: 20px; color: #8e8b8b; line-height: 30px; text-align: center; font-family: Poppins, sans-serif') #{i.description}   
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  |           
+                  tr
+                    td(width='100%', style='text-align: left; padding-top: 50px; background: #fdf6ed; border-left: 1px solid #000; border-right: 1px solid #000;')
+                      table(width='100%', cellpadding='0', cellspacing='0', style='min-width:100%;')
+                        tbody
+                          tr
+                            td
+                              span(style='font-size: 24px; padding: 0 20px; font-weight: bold; color: #000000; line-height: 26px;') 
+                            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                            td
+                              div.line(style='background: #000000; height: 2px; float: right;') 
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  |   
+                  tr
+                    td(width='100%', style='text-align: left; margin: 0 0 20px 0; padding: 20px; background: #fdf6ed; border-left: 1px solid #000; border-right: 1px solid #000;')
+                      table(width='100%', cellpadding='0', cellspacing='0', style='min-width:100%; text-align: left; padding-top: 20px;')
+                        tbody
+                          tr
+                            td
+                              span.font20(style='font-size: 30px; font-weight: bold; color: #000000; line-height: 36px; font-family: Poppins, sans-serif') Additional benefits
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  |    
+                  each i in [1, 2, 3]           
+                    tr
+                        td(width='100%', style=' padding: 20px 0 20px 20px; background: #fdf6ed; border-left: 1px solid #000; border-right: 1px solid #000;')
+                          table(width='100%', cellpadding='0', cellspacing='0', style='min-width:100%;')
+                            tbody
+                              tr
+                                td(style='vertical-align: top; ')
+                                  img(style='width: 50px; margin-right: 20px;', alt='', src='#{i.template_image}')
+                                |                             
+                                td(style=' width: 100%; padding-right: 50px;')
+                                  table(width='100%', cellpadding='0', cellspacing='0', style='min-width:100%;')
+                                    tbody                  
+                                      tr
+                                        td
+                                          span(style='font-size: 20px; font-weight: 500; line-height: 30px; text-align: center; font-family: Poppins, sans-serif') #{i.heading}
+                                      |                 
+                                      tr
+                                        td(style='padding-top: 2px;')
+                                          span(style='font-size: 20px; color: #8e8b8b; line-height: 30px; text-align: center; font-family: Poppins, sans-serif') #{i.description}   
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  |                       
+                  tr
+                    td(width='100%', style='text-align: left; padding: 20px;  border-top: 1px solid #000;  background: #fdf6ed; border-left: 1px solid #000; border-right: 1px solid #000;')
+                      table(width='100%', cellpadding='0', cellspacing='0', style='min-width:100%; text-align: left; padding-top: 40px;')
+                        tbody
+                          tr
+                            td(style='text-align: center;  margin-top: 30px; font-weight: bold; color: #000000; line-height: 26px')
+                              table(width='100%', cellpadding='0', cellspacing='0', style='min-width:100%; padding-bottom: 20px;')
+                                tbody                  
+                                  tr
+                                    td
+                                      div(style='color: #378376; font-size: 46px; text-align: center; padding: 10px 0; font-weight: bold; font-family: Poppins, sans-serif') 1,00,000+
+                                  |                 
+                                  tr
+                                    td
+                                      div(style='font-size: 22px; padding-top: 20px; font-weight: 600; text-align: center; font-family: Poppins, sans-serif') Happy customers
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  |                    
+                  tr
+                    td(width='100%', style='border-left: 1px solid #000; border-right: 1px solid #000;')
+                      table(width='100%', cellpadding='0', cellspacing='0', style='min-width:100%; text-align: center;  background: #fdf6ed; padding-top: 30px')
+                        tbody
+                          tr
+                            td(style='text-align: center')
+                              div(style='font-size: 20px; font-weight: 500; padding: 0 25px 0 25px; line-height: 26px; font-family: Poppins, sans-serif') For a better experience, download the app 
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;                              
+                  |                   
+                  tr
+                    td(width='100%;', style='padding: 20px 10% 20px 10%; background: #fdf6ed;  text-align: center; border-left: 1px solid #000; border-right: 1px solid #000;')
+                      div
+                        a(href='https://play.google.com/store/apps/details?id=com.aranoah.healthkart.plus&utm_source=download_android_app&utm_medium=email&utm_campaign=Careplan_welcome')
+                          img(alt='', src='https://res.cloudinary.com/du8msdgbj/image/upload/v1579864570/marketing/wsoopfzw4f9znpzgl0ql.png')
+                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                        a(href='https://apps.apple.com/in/app/1mg/id554578419?utm_source=download_ios_app&utm_medium=email&utm_campaign=Careplan_welcome')
+                          img(alt='', src='https://res.cloudinary.com/du8msdgbj/image/upload/v1579865063/marketing/ih0stx1wcdhz3tikuv4j.png')
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;                              
+                  | 
+          tr
+            td(width='100%', style=' padding:25px; background: #ff6f61')
+              table(width='100%', cellpadding='0', cellspacing='0', style='min-width:100%; text-align: center')
+                tbody
+                  tr
+                    td(style='text-align: center')
+                      a(href='https://www.1mg.com/?utm_source=footer_logo&utm_medium=email&utm_campaign=Careplan_welcome')
+                        img(style='width: 100px; margin: 0 auto', alt='', src='https://res.cloudinary.com/du8msdgbj/image/upload/v1580466906/marketing/hb3om7secyt4m7hchtdf.png')
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  |                   
+                  tr
+                    td(style='padding: 15px; text-align: center')
+                     span(style='font-size: 24px; color: #000000; text-align: center; font-weight: 500; line-height: 28px') Bringing Care to Health
+      // if gte mso 9

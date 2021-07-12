@@ -1,0 +1,19 @@
+{
+    show_savings: true,
+    total_savings: 670,
+    savings_data: [
+        [
+            {
+                savings: 100,
+                description: '12 Free deliveries',
+                icon: url
+            },
+            {
+                savings: 100,
+                description: '12 Free deliveries',
+                icon: url
+            },
+        ]
+    ],
+   deep_link: <link>
+}
