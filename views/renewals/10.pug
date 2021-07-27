@@ -1,214 +1,203 @@
-- var ctaLink = 'https://www.google.com'
-- var show_savings = true
-- var total_savings = 3999
-- var savings_data = [[{savings: 999, description: 'from 23 orders', icon: 'https://res.cloudinary.com/dusqx2w0c/image/upload/v1625074781/marketing/zffzr1u8c5k8dw3m6fap.png'},{savings: 999,description: '12 Free deliveries',icon: 'https://res.cloudinary.com/dusqx2w0c/image/upload/v1625074897/marketing/m96jd1xnl85dvsnaoool.png'}],[{savings: 600,description: '2 Lab tests',icon: 'https://res.cloudinary.com/dusqx2w0c/image/upload/v1625248380/marketing/ptkuufdd3jtapu9fielo.png'},{savings: 99,description: '1 Premium consultation',icon: 'https://res.cloudinary.com/dusqx2w0c/image/upload/v1625248432/marketing/ihiixccxivooc50hbmss.png'}],[{savings: 80,description: '4 Express delivery',icon: 'https://res.cloudinary.com/dusqx2w0c/image/upload/v1625075107/marketing/rfqou2qufuzpazsylq7z.png'}],]
+- var ctaLink = deep_link
 doctype html
-head
-    meta(charset='utf-8')
-    | &#x9;
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    | &#x9;
-    title 10 Days Mailer
-    | &#x9;
-    link(href='https://fonts.googleapis.com/css?family=Poppins:400,600,700,800&display=swap', rel='stylesheet')
-    | &#x9;
-    style.
-      body {
-      margin: 0;
-      padding: 0;
-      font-size: 0;
-      -ms-text-size-adjust: 100%;
-      -webkit-text-size-adjust: 100%;
-      font-family: 'Poppins', sans-serif;
-      color: #000000;
-      }
-      img {
-      -ms-interpolation-mode: bicubic;
-      }
-
-body
-    center 
-        | &#x9;&#x9;
-        table(cellpadding='0', cellspacing='0', border='0', width='100%', style='width:calc(100%);max-width:calc(600px); background: #fffff; margin: 0 auto;')
-            tbody
-                tr
-                    td(width='100%'  style='padding-top: 24px; padding-bottom: 48px; padding-left: 16px; padding-right: 16px;')
-                        table(cellpadding='0', cellspacing='0', border='0', width='100%')
-                            tbody
-                                tr(width='100%')
-                                    td(width='100%')
-                                        div(style='')
-                                            img(alt='' src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625074714/marketing/pal1ehqrc8fncyqk8pu8.png' style='height: 25px;')
-                                            div(style='font-size: 40px; font-weight: 600; text-align: center; padding-top: 40px;') Only 10 days remaining
-                                            div(style='font-size: 20px; font-weight: 400; text-align: center; padding-top: 8px;') We don't want to lose you!
-                | &#x9;&#x9;&#x9;&#x9;
-                tr
-                    td(width='100%' style='padding-left: 16px; padding-right: 16px;')
-                        hr(style='width: 100%; height: 2px; background-color: #f0f0f0; border: none;')
-                | &#x9;&#x9;&#x9;&#x9;
-                tr
-                    td(width='100%' style='padding: 24px 16px 16px 16px;')
-                        table(cellpadding='0', cellspacing='0', border='0', width='100%')
-                            tbody
-                                tr
-                                    td(width='100%')
-                                        div(style='')
-                                            div(style='font-weight: 500; font-size: 24px;') Hello Care Plan member,
-                                            div(style='font-size: 20px; font-weight: 500; padding-top: 16px;') Your care plan membership will expire in 10 days.
-                                            div(style='font-size: 20px; font-weight: 400;') We have all the more reasons for you to believe you should renew your membership.
-                                            div(style='padding-top: 16px;')
-                                                a(href='http://google.com/' target='_blank')
-                                                    img.gif(src='http://res.cloudinary.com/dusqx2w0c/image/upload/v1625137818/marketing/aiy9zz9cdjrmzpuzha1v.gif' width='100%')
-
-                | &#x9;&#x9;&#x9;&#x9;
-                if show_savings
+html
+    head
+        meta(charset='utf-8')
+        | &#x9;
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        | &#x9;
+        title 10 Days Mailer
+        | &#x9;
+        link(href='https://fonts.googleapis.com/css?family=Poppins:400,600,700,800&display=swap', rel='stylesheet')
+        | &#x9;
+        style.
+            body {
+            margin: 0;
+            padding: 0;
+            font-size: 0;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            font-family: 'Poppins', sans-serif;
+            color: #000000;
+            }
+            table {
+            border-spacing: 0;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+            }
+            table td {
+            border-collapse: collapse;
+            }
+            img {
+            -ms-interpolation-mode: bicubic;
+            }
+    body(style="")
+        center 
+            | &#x9;&#x9;
+            table(cellpadding='0', cellspacing='0', border='0', width='100%', style='width:calc(100%);max-width:calc(600px); background: #fffff; margin: 0 auto;')
+                tbody
+                    | &#x9;&#x9;&#x9;&#x9;
                     tr
-                        td(width='100%' style='padding: 16px 16px 16px 16px;')
-                            table(cellpadding='0', cellspacing='0', border='0', width='100%', style='width:calc(100%);max-width:calc(600px); background: #fffff; margin: 0 auto;')
+                        td(width="70%" style='padding-top: 16px; padding-left: 16px;')
+                            img(alt='' src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1626281797/ihptfunu0gt4qzpja7bw.png' style='height: 24px; width: 109px;')
+                        td(width="30%" style='padding-top: 16px; padding-right: 16px; text-align: right;')
+                            img(alt='' src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1626281821/woxj7ahh3adihej9mnyg.png' style='height: 24px; width: 103px;')
+                    | &#x9;&#x9;&#x9;&#x9;
+                    tr
+                        td(colspan="2" width='100%'  style='padding: 48px 16px;')
+                            div(style='font-size: 40px; font-weight: 600; text-align: center;') Only 10 days remaining
+                            div(style='font-size: 20px; font-weight: 400; text-align: center; padding-top: 8px;') We don't want to lose you!
+                    | &#x9;&#x9;&#x9;&#x9;
+                    tr
+                        td(colspan="2" width='100%' style='padding-left: 16px; padding-right: 16px;')
+                            hr(style='width: 100%; height: 2px; background-color: #f0f0f0; border: none;')
+                    | &#x9;&#x9;&#x9;&#x9;
+                    tr
+                        td(colspan="2" width='100%' style='padding: 24px 16px 16px 16px;')
+                            div(style='')
+                                div(style='font-weight: 500; font-size: 24px;') Hello Care Plan member,
+                                div(style='font-size: 20px; font-weight: 500; padding-top: 16px;') Your care plan membership will expire in 10 days.
+                                div(style='font-size: 20px; font-weight: 400;') We have all the more reasons for you to believe you should renew your membership.
+                                div(style='padding-top: 16px;')
+                                    a(href='{{ctaLink}}' target='_blank')
+                                        img.gif(src='http://res.cloudinary.com/dusqx2w0c/image/upload/v1625137818/marketing/aiy9zz9cdjrmzpuzha1v.gif' width='100%')
+
+                    | &#x9;&#x9;&#x9;&#x9;
+                    if show_savings
+                        tr
+                            td(colspan="2" width='100%' style='padding: 16px 16px 16px 16px;')
+                                table(cellpadding='0', cellspacing='0', border='0', width='100%', style='width:calc(100%);max-width:calc(600px); background: #fffff; margin: 0 auto;')
+                                    tbody
+                                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                        tr
+                                            td(width='100%')
+                                                div(style='font-weight: 600; font-size: 20px; color: #3b3b3b;') Heres a recap of your savings
+                                                div(style='font-weight: 500; font-size: 18px; color: #767676; padding-top: 8px;') Total savings on your membership : ₹#{total_savings}
+                                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                        tr
+                                            td(width='100%' style='padding-top: 16px; padding-bottom: 16px;')
+                                                table(cellpadding='0', cellspacing='0', border='0', width='100%')
+                                                    tbody
+                                                        each data in savings_data
+                                                            tr
+                                                                each row, index in data
+                                                                    if index === 0
+                                                                        td(width='50%' style='padding-top: 16px; padding-right: 16px;')
+                                                                            div(style='background-color: #f9f9f9;')
+                                                                                table(cellpadding='0', cellspacing='0', border='0', width='100%')
+                                                                                    tbody
+                                                                                        tr
+                                                                                            td(width='20%')
+                                                                                                img(src=`${row.icon}` width='45px' height='45px' style='vertical-align: center; padding-left: 8px; padding-right: 13px;')
+                                                                                            td(width='80%')
+                                                                                                div(style='font-size: 24px; font-weight: 600; padding-top: 8px; padding-right: 8px;') ₹#{row.savings}
+                                                                                                div(style='font-size: 16px; font-weight: 400; color: #767676; padding-bottom: 8px; padding-right: 8px;') #{row.description}
+                                                                    else
+                                                                        td(width='50%' style='padding-top: 16px;')
+                                                                            div(style='background-color: #f9f9f9;')
+                                                                                table(cellpadding='0', cellspacing='0', border='0', width='100%')
+                                                                                    tbody
+                                                                                        tr
+                                                                                            td(width='20%')
+                                                                                                img(src=`${row.icon}` width='45px' height='45px' style='vertical-align: center; padding-left: 8px; padding-right: 13px;')
+                                                                                            td(width='80%')
+                                                                                                div(style='font-size: 24px; font-weight: 600; padding-top: 8px; padding-right: 8px;') ₹#{row.savings}
+                                                                                                div(style='font-size: 16px; font-weight: 400; color: #767676; padding-bottom: 8px; padding-right: 8px;') #{row.description}
+                                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                        tr
+                                            td(width='100%')
+                                                div(style='font-size: 20px; font-weight: 400;') You are among our top customers to get this extra care. And thats not all, here’s an offer just for you!
+                    | &#x9;&#x9;&#x9;&#x9;
+                    tr
+                        td(colspan="2" width='100%' style='padding: 8px 16px 0px 16px;')
+                            div(style='font-weight: 600; font-size: 24px; color: #0094d8;') Limited time offer !
+                            div(style='font-size: 20px; font-weight: 400;')
+                                div If you renew before expiry you get
+                                ul(style='margin: 0;')
+                                    li 
+                                        span(style='font-weight: 600;') Extra 15 days 
+                                        | of membership free
+                                    li
+                                        span(style='font-weight: 600;') 6 months extended validity 
+                                        | on current unused benefits
+                                div(style='font-size: 18px; color: #767676;') Benefits will be added to your renewed membership
+                    | &#x9;&#x9;&#x9;&#x9;
+                    if show_savings
+                        tr
+                            td(colspan="2" width='100%' style='padding: 24px 16px 0px 16px;')
+                                a(href='{{ctaLink}}' target='_blank')
+                                    img(src='http://res.cloudinary.com/dusqx2w0c/image/upload/v1625137818/marketing/aiy9zz9cdjrmzpuzha1v.gif' width='100%')
+
+                    | &#x9;&#x9;&#x9;&#x9;
+                    tr
+                        td(colspan="2" width='100%' style='padding: 24px 16px 24px 16px;')
+                            div(style='font-weight: 500; font-size: 20px;') With lots of care,
+                            div(style='font-weight: 400; font-size: 18px; color: #767676;') Care Plan team
+                    | &#x9;&#x9;&#x9;&#x9;
+                    tr
+                        td(colspan="2" width='100%')
+                            hr(style='width: 100%; height: 4px; background-color: #f0f0f0; border: none;')
+                    | &#x9;&#x9;&#x9;&#x9;
+                    tr
+                        td(colspan="2" width='100%' style='padding: 16px;')
+                            table(cellpadding='0', cellspacing='0', border='0', width='100%')
                                 tbody
                                     | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
                                     tr
-                                        td(width='100%')
-                                            div(style='font-weight: 600; font-size: 20px; color: #3b3b3b;') Heres a recap of your savings
-                                            div(style='font-weight: 500; font-size: 18px; color: #767676; padding-top: 8px;') Total savings on your membership : ₹#{total_savings}
-                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                        td(style='vertical-align: baseline; padding-right: 40px; overflow-x: hidden;')
+                                            div 
+                                                a(href='https://www.1mg.com/' target='_blank')
+                                                    img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625074275/marketing/v74c9brcyacmvyolhddy.png' width='162px' height='35px' style='display: block;')
+                                                div(style='font-size: 14px; font-weight: 400; padding-top: 8px;') Bringing Care to Health
+                                        td(style='vertical-align: baseline; overflow-x: hidden;')
+                                            div(style=' text-align: center;') 
+                                                img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625075574/marketing/qimy8oq2yvck1rrupsja.png' width='31px' height='33px' style='display: block; margin: 0 auto;')
+                                                div(style='font-size: 12px; font-weight: 400; padding-top: 8px; color: #767676;') Other Medicines
+                                        td(style='vertical-align: middle; padding-left: 8px; padding-right: 8px; overflow-x: hidden;')
+                                            div(style='border-left: 1px solid #767676; height: 27px;')
+                                        td(style='vertical-align: baseline; overflow-x: hidden;')
+                                            div(style=' text-align: center;') 
+                                                img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625075629/marketing/x2tac8y73z0hheaqytyb.png' width='27px' height='30px' style='display: block; margin: 0 auto;')
+                                                div(style='font-size: 12px; font-weight: 400; padding-top: 8px; color: #767676;') Book lab test
+                                        td(style='vertical-align: middle; padding-left: 8px; padding-right: 8px; overflow-x: hidden;')
+                                            div(style='border-left: 1px solid #767676; height: 27px;')
+                                        td(style='vertical-align: baseline; overflow-x: hidden;')
+                                            div(style=' text-align: center;')  
+                                                img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625075055/marketing/vutfrn94pnl0vnonflfn.png' width='31px' height='33px' style='display: block; margin: 0 auto;')
+                                                div(style='font-size: 12px; font-weight: 400; padding-top: 8px; color: #767676;') Consult doctors
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;                    
                                     tr
-                                        td(width='100%' style='padding-top: 16px; padding-bottom: 16px;')
+                                        td(width='100%' style='padding-top: 32px; padding-bottom: 8px;' colspan='6')
                                             table(cellpadding='0', cellspacing='0', border='0', width='100%')
                                                 tbody
-                                                    each data in savings_data
-                                                        tr
-                                                            each row, index in data
-                                                                if index === 0
-                                                                    td(width='50%' style='padding-top: 16px; padding-right: 16px;')
-                                                                        div(style='background-color: #f9f9f9;')
-                                                                            table(cellpadding='0', cellspacing='0', border='0', width='100%')
-                                                                                tbody
-                                                                                    tr
-                                                                                        td(width='20%')
-                                                                                            img(src=`${row.icon}` width='45px' height='45px' style='vertical-align: center; padding-left: 8px; padding-right: 13px;')
-                                                                                        td(width='80%')
-                                                                                            div(style='font-size: 24px; font-weight: 600; padding-top: 8px; padding-right: 8px;') ₹#{row.savings}
-                                                                                            div(style='font-size: 16px; font-weight: 400; color: #767676; padding-bottom: 8px; padding-right: 8px;') #{row.description}
-                                                                else
-                                                                    td(width='50%' style='padding-top: 16px;')
-                                                                        div(style='background-color: #f9f9f9;')
-                                                                            table(cellpadding='0', cellspacing='0', border='0', width='100%')
-                                                                                tbody
-                                                                                    tr
-                                                                                        td(width='20%')
-                                                                                            img(src=`${row.icon}` width='45px' height='45px' style='vertical-align: center; padding-left: 8px; padding-right: 13px;')
-                                                                                        td(width='80%')
-                                                                                            div(style='font-size: 24px; font-weight: 600; padding-top: 8px; padding-right: 8px;') ₹#{row.savings}
-                                                                                            div(style='font-size: 16px; font-weight: 400; color: #767676; padding-bottom: 8px; padding-right: 8px;') #{row.description}
+                                                    tr
+                                                        td(width='100%')
+                                                            div(style='font-size: 14px; color: #767676;') Need help?
+                                                            a(style='font-size: 14px; color: #ff6f61; padding-top: 16px;' href='https://www.1mg.com/support/chat?page_id=CONTACT_US::chat_icon&bu=pharmacy&label=Default' target="_bank") Contact us here
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;                           
+                                    tr
+                                        td(colspan='6')
+                                            hr(style='width: 100%; height: 1px; background-color: #f0f0f0; border: none;')
                                     | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
                                     tr
-                                        td(width='100%')
-                                            div(style='font-size: 20px; font-weight: 400;') You are among our top customers to get this extra care. And thats not all, here’s an offer just for you!
-                tr
-                    td(width='100%' style='padding: 8px 16px 0px 16px;')
-                        table(cellpadding='0', cellspacing='0', border='0', width='100%')
-                            tbody
-                                tr
-                                    td(width='100%')
-                                        div(style='font-weight: 600; font-size: 24px; color: #0094d8;') Limited time offer !
-                                        div(style='font-size: 20px; font-weight: 400;')
-                                            div If you renew before expiry you get
-                                            ul(style='margin: 0;')
-                                                li 
-                                                    span(style='font-weight: 600;') Extra 15 days 
-                                                    | of membership free
-                                                li
-                                                    span(style='font-weight: 600;') 6 months extended validity 
-                                                    | on current unused benefits
-                                            div(style='font-size: 18px; color: #767676;') Benefits will be added to your renewed membership
-                | &#x9;&#x9;&#x9;&#x9;
-                if show_savings
-                    tr
-                        td(width='100%' style='padding: 24px 16px 0px 16px;')
-                            a(href='http://google.com/' target='_blank')
-                                img(src='http://res.cloudinary.com/dusqx2w0c/image/upload/v1625137818/marketing/aiy9zz9cdjrmzpuzha1v.gif' width='100%')
-
-                | &#x9;&#x9;&#x9;&#x9;
-                tr
-                    td(width='100%' style='padding: 24px 16px 24px 16px;')
-                        table(cellpadding='0', cellspacing='0', border='0', width='100%')
-                            tbody
-                                tr
-                                    td(width='100%')
-                                        div(style='font-weight: 500; font-size: 20px;') With lots of care,
-                                        div(style='font-weight: 400; font-size: 18px; color: #767676;') Care Plan team
-                | &#x9;&#x9;&#x9;&#x9;
-                tr
-                    td(width='100%')
-                        hr(style='width: 100%; height: 4px; background-color: #f0f0f0; border: none;')
-                | &#x9;&#x9;&#x9;&#x9;
-                tr
-                    td(width='100%' style='padding: 16px;')
-                        table(cellpadding='0', cellspacing='0', border='0', width='100%')
-                            tbody
-                                tr
-                                    td(style='vertical-align: baseline; padding-right: 40px; overflow-x: hidden;')
-                                        div 
-                                            a(href='https://www.1mg.com/' target='_blank')
-                                                img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625074275/marketing/v74c9brcyacmvyolhddy.png' width='162px' height='35px' style='display: block;')
-                                            div(style='font-size: 14px; font-weight: 400; padding-top: 8px;') Bringing Care to Health
-                                    td(style='vertical-align: baseline; overflow-x: hidden;')
-                                        div(style=' text-align: center;') 
-                                            img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625075574/marketing/qimy8oq2yvck1rrupsja.png' width='31px' height='33px' style='display: block; margin: 0 auto;')
-                                            div(style='font-size: 12px; font-weight: 400; padding-top: 8px; color: #767676;') Other Medicines
-                                    td(style='vertical-align: middle; padding-left: 8px; padding-right: 8px; overflow-x: hidden;')
-                                        div(style='border-left: 1px solid #767676; height: 27px;')
-                                    td(style='vertical-align: baseline; overflow-x: hidden;')
-                                        div(style=' text-align: center;') 
-                                            img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625075629/marketing/x2tac8y73z0hheaqytyb.png' width='27px' height='30px' style='display: block; margin: 0 auto;')
-                                            div(style='font-size: 12px; font-weight: 400; padding-top: 8px; color: #767676;') Book lab test
-                                    td(style='vertical-align: middle; padding-left: 8px; padding-right: 8px; overflow-x: hidden;')
-                                        div(style='border-left: 1px solid #767676; height: 27px;')
-                                    td(style='vertical-align: baseline; overflow-x: hidden;')
-                                        div(style=' text-align: center;')  
-                                            img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625075055/marketing/vutfrn94pnl0vnonflfn.png' width='31px' height='33px' style='display: block; margin: 0 auto;')
-                                            div(style='font-size: 12px; font-weight: 400; padding-top: 8px; color: #767676;') Consult doctors
-                                                    
-                                tr
-                                    td(width='100%' style='padding-top: 24px; padding-bottom: 24px;' colspan='6')
-                                        table(cellpadding='0', cellspacing='0', border='0', width='100%')
-                                            tbody
-                                                tr
-                                                    td(width='100%')
-                                                        div(style='font-size: 14px; color: #767676;') Need help?
-                                                        a(style='font-size: 14px; color: #ff6f61; padding-top: 16px;' href='') Contact us here
-                                                    //-td(width='20%')
-                                                    //-    img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625596743/ay8qpd1dxq2txqdovoof.png' style="max-width: 166px;")
-                                                    //-td(width='40%')
-                                                    //-    div(style="font-size: 12px; padding-left: 8px;")
-                                                    //-        | Extra savings on all orders, free shipping and much more. 
-                                                    //-        a(style="color: #ff6f61; font-size: 12px; text-underline-color: #ff6f61;" href="#") Join now
-                                                            
-                                tr
-                                    td(colspan='6')
-                                        hr(style='width: 100%; height: 2px; background-color: #f0f0f0; border: none;')
-                                tr
-                                    td(colspan='6')
-                                        div(style='font-size: 16px; font-weight: 500; padding-top: 24px; padding-bottom: 24px;') We make healthcare understandable, accessible and affordable.
-                                tr
-                                    td(colspan='3')
-                                        div(style='font-size: 16px; color: #a9a9a9') Download the app
-                                        a(href='https://play.google.com/store/apps/details?id=com.aranoah.healthkart.plus&utm_source=download_android_app&utm_medium=email&utm_campaign=Careplan_welcome' target='_blank')
-                                            img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625076731/marketing/x2y2jlp0cwwixorirm69.png' width='140px' height='40px' style='padding-top: 16px; padding-right: 8px;')
-                                        a(href='https://apps.apple.com/in/app/1mg/id554578419?utm_source=download_ios_app&utm_medium=email&utm_campaign=Careplan_welcome' target='_blank')
-                                            img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625076805/marketing/go0c8yjy9feftvulco5v.png' width='140px' height='40px' style='padding-top: 16px;')
-                                    td(colspan='3')
-                                        div(style='font-size: 16px; color: #a9a9a9') Connect with us
-                                        a(href='https://www.facebook.com/1mgOfficial/' target='_blank')
-                                            img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625076551/marketing/myyyetdzqygs8shjqdmn.png' width='32px' height='32px' style='padding-top: 20px; padding-right: 15px;')
-                                        a(href='https://twitter.com/1mgOfficial' target='_blank')
-                                            img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625076623/marketing/m2hyr2aqygqjei375oad.png' width='27px' height='20px' style='padding-top: 15px; padding-right: 15px;')
-                                        a(href='https://www.instagram.com/1mgofficialpage/' target='_blank')
-                                            img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625076647/marketing/v3d6qhiivxyx7fmvwrkl.png' width='27px' height='27px' style='padding-top: 22px; padding-right: 15px;')
-                                        a(href='https://www.youtube.com/channel/UCNUvsEya-Jq_Pw1t6R47hew' target="_blank")
-                                            img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625076681/marketing/abty9celdoit9627get0.png' width='27px' height='24px' style='padding-top: 15px;')
-                                tr
-                                    td(colspan='6')
-                                        div(style='font-size: 14px; padding-top: 24px; color: #767676; padding-bottom: 8px;') © 2021 1mg, All rights reserved
-                                        div(style='font-size: 12px; color: #a9a9a9;') Tower -B-46/4, 5th floor, Presidency Building, Mehrauli Gurgaon Road, Sector-14, Gurugram, Haryana 122001 India
+                                        td(colspan='3')
+                                            div(style='font-size: 16px; color: #a9a9a9; padding-top: 40px;') Download the app
+                                            a(href='https://play.google.com/store/apps/details?id=com.aranoah.healthkart.plus&utm_source=download_android_app&utm_medium=email&utm_campaign=Careplan_welcome' target='_blank')
+                                                img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625076731/marketing/x2y2jlp0cwwixorirm69.png' width='140px' height='40px' style='padding-top: 16px; padding-right: 8px;')
+                                            a(href='https://apps.apple.com/in/app/1mg/id554578419?utm_source=download_ios_app&utm_medium=email&utm_campaign=Careplan_welcome' target='_blank')
+                                                img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625076805/marketing/go0c8yjy9feftvulco5v.png' width='140px' height='40px' style='padding-top: 16px;')
+                                        td(colspan='3')
+                                            div(style='font-size: 16px; color: #a9a9a9; padding-top: 40px;') Connect with us
+                                            a(href='https://www.facebook.com/1mgOfficial/' target='_blank')
+                                                img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625076551/marketing/myyyetdzqygs8shjqdmn.png' width='32px' height='32px' style='padding-top: 20px; padding-right: 15px;')
+                                            a(href='https://twitter.com/1mgOfficial' target='_blank')
+                                                img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625076623/marketing/m2hyr2aqygqjei375oad.png' width='27px' height='20px' style='padding-top: 15px; padding-right: 15px;')
+                                            a(href='https://www.instagram.com/1mgofficialpage/' target='_blank')
+                                                img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625076647/marketing/v3d6qhiivxyx7fmvwrkl.png' width='27px' height='27px' style='padding-top: 22px; padding-right: 15px;')
+                                            a(href='https://www.youtube.com/channel/UCNUvsEya-Jq_Pw1t6R47hew' target="_blank")
+                                                img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625076681/marketing/abty9celdoit9627get0.png' width='27px' height='24px' style='padding-top: 15px;')
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    tr
+                                        td(colspan='6')
+                                            div(style='font-size: 14px; padding-top: 40px; color: #767676; padding-bottom: 8px;') © 2021 1mg, All rights reserved
+                                            div(style='font-size: 12px; color: #a9a9a9;') Tower -B-46/4, 5th floor, Presidency Building, Mehrauli Gurgaon Road, Sector-14, Gurugram, Haryana 122001 India
