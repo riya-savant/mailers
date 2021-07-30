@@ -31,115 +31,102 @@ html
             img {
             -ms-interpolation-mode: bicubic;
             }
-    body(style="")
-        center 
+    body(style="margin: 0; padding: 0; font-size: 0; font-family: Poppins, sans-serif; background-color: #FFFFFF;")
+        center(style="background: #F9F9F9; padding-top: 10px; padding-bottom: 10px;") 
             | &#x9;&#x9;
-            table(cellpadding='0', cellspacing='0', border='0', width='100%', style='width:calc(100%);max-width:calc(600px); background: #fffff; margin: 0 auto;')
+            table(cellpadding='0', cellspacing='0', border='0', width='100%', style='width:calc(100%);max-width:calc(600px); background: #FFFFFF; margin: 0 auto; border: 1px solid #F0F0F0;')
                 tbody
                     | &#x9;&#x9;&#x9;&#x9;
                     tr
-                        td(width="70%" style='padding-top: 16px; padding-left: 16px;')
-                            img(alt='' src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1626281797/ihptfunu0gt4qzpja7bw.png' style='height: 24px; width: 109px;')
-                        td(width="30%" style='padding-top: 16px; padding-right: 16px; text-align: right;')
-                            img(alt='' src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1626281821/woxj7ahh3adihej9mnyg.png' style='height: 24px; width: 103px;')
+                        td(style='padding-top: 16px; padding-left: 16px;', width="80%")
+                            img(style='height: 24px; width: 109px;', alt='', src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1626281797/ihptfunu0gt4qzpja7bw.png')
+                        td(style='padding-top: 16px; padding-right: 16px; text-align: right;', width="20%")
+                            img(style='height: 24px; width: 103px;', alt='', src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1626281821/woxj7ahh3adihej9mnyg.png')
                     | &#x9;&#x9;&#x9;&#x9;
                     tr
-                        td(colspan="2" width='100%'  style='padding: 48px 16px;')
-                            div(style='font-size: 40px; font-weight: 600; text-align: center;') Only 10 days remaining
-                            div(style='font-size: 20px; font-weight: 400; text-align: center; padding-top: 8px;') We don't want to lose you!
+                        td(style='padding: 48px 16px;', colspan="2", width='100%')
+                            div(style='font-size: 40px; font-weight: 600; text-align: center; font-family: Poppins, sans-serif;') Only 10 days remaining
+                            div(style='font-size: 20px; font-weight: 400; text-align: center; padding-top: 8px; font-family: Poppins, sans-serif;') We don't want to lose you!
                     | &#x9;&#x9;&#x9;&#x9;
                     tr
-                        td(colspan="2" width='100%' style='padding-left: 16px; padding-right: 16px;')
-                            hr(style='width: 100%; height: 2px; background-color: #f0f0f0; border: none;')
+                        td(style='padding-left: 16px; padding-right: 16px;', colspan="2", width='100%')
+                            hr(style="border:0px; border-top:1px solid #F0F0F0; height:1px; color: #F0F0F0; background: #F0F0F0; margin:0px;")
                     | &#x9;&#x9;&#x9;&#x9;
                     tr
-                        td(colspan="2" width='100%' style='padding: 24px 16px 16px 16px;')
-                            div(style='')
-                                div(style='font-weight: 500; font-size: 24px;') Hello Care Plan member,
-                                div(style='font-size: 20px; font-weight: 500; padding-top: 16px;') Your care plan membership will expire in 10 days.
-                                div(style='font-size: 20px; font-weight: 400;') We have all the more reasons for you to believe you should renew your membership.
-                                div(style='padding-top: 16px;')
-                                    a(href='{{ctaLink}}' target='_blank')
-                                        img.gif(src='http://res.cloudinary.com/dusqx2w0c/image/upload/v1625137818/marketing/aiy9zz9cdjrmzpuzha1v.gif' width='100%')
+                        td(style='padding: 24px 16px 16px 16px; text-align: left;', colspan="2", width='100%')
+                            div(style='font-weight: 500; font-size: 24px; font-family: Poppins, sans-serif;') Hello Care Plan member,
+                            div(style='font-size: 20px; font-weight: 500; padding-top: 16px; font-family: Poppins, sans-serif;') Your care plan membership will expire in 10 days.
+                            div(style='font-size: 20px; font-weight: 400; font-family: Poppins, sans-serif;') We have all the more reasons for you to believe you should renew your membership.
+                            div(style='padding-top: 16px;')
+                                a(href='{{ctaLink}}', target='_blank')
+                                    img(src='http://res.cloudinary.com/dusqx2w0c/image/upload/v1625137818/marketing/aiy9zz9cdjrmzpuzha1v.gif', width='100%')
 
                     | &#x9;&#x9;&#x9;&#x9;
                     if show_savings
                         tr
-                            td(colspan="2" width='100%' style='padding: 16px 16px 16px 16px;')
+                            td(style='padding: 16px 0px 16px 16px;', colspan="2", width='100%')
                                 table(cellpadding='0', cellspacing='0', border='0', width='100%', style='width:calc(100%);max-width:calc(600px); background: #fffff; margin: 0 auto;')
                                     tbody
                                         | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
                                         tr
-                                            td(width='100%')
-                                                div(style='font-weight: 600; font-size: 20px; color: #3b3b3b;') Heres a recap of your savings
-                                                div(style='font-weight: 500; font-size: 18px; color: #767676; padding-top: 8px;') Total savings on your membership : ₹#{total_savings}
+                                            td(style="padding-right: 16px; text-align: left;", width='100%')
+                                                div(style='font-weight: 600; font-size: 20px; color: #3b3b3b; font-family: Poppins, sans-serif;') Heres a recap of your savings
+                                                div(style='font-weight: 500; font-size: 18px; color: #767676; padding-top: 8px; font-family: Poppins, sans-serif;') Total savings on your membership : ₹#{total_savings}
                                         | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
                                         tr
-                                            td(width='100%' style='padding-top: 16px; padding-bottom: 16px;')
+                                            td(style='padding-top: 16px; padding-bottom: 16px;', width='100%')
                                                 table(cellpadding='0', cellspacing='0', border='0', width='100%')
                                                     tbody
                                                         each data in savings_data
                                                             tr
-                                                                each row, index in data
-                                                                    if index === 0
-                                                                        td(width='50%' style='padding-top: 16px; padding-right: 16px;')
-                                                                            div(style='background-color: #f9f9f9;')
-                                                                                table(cellpadding='0', cellspacing='0', border='0', width='100%')
-                                                                                    tbody
-                                                                                        tr
-                                                                                            td(width='20%')
-                                                                                                img(src=`${row.icon}` width='45px' height='45px' style='vertical-align: center; padding-left: 8px; padding-right: 13px;')
-                                                                                            td(width='80%')
-                                                                                                div(style='font-size: 24px; font-weight: 600; padding-top: 8px; padding-right: 8px;') ₹#{row.savings}
-                                                                                                div(style='font-size: 16px; font-weight: 400; color: #767676; padding-bottom: 8px; padding-right: 8px;') #{row.description}
-                                                                    else
-                                                                        td(width='50%' style='padding-top: 16px;')
-                                                                            div(style='background-color: #f9f9f9;')
-                                                                                table(cellpadding='0', cellspacing='0', border='0', width='100%')
-                                                                                    tbody
-                                                                                        tr
-                                                                                            td(width='20%')
-                                                                                                img(src=`${row.icon}` width='45px' height='45px' style='vertical-align: center; padding-left: 8px; padding-right: 13px;')
-                                                                                            td(width='80%')
-                                                                                                div(style='font-size: 24px; font-weight: 600; padding-top: 8px; padding-right: 8px;') ₹#{row.savings}
-                                                                                                div(style='font-size: 16px; font-weight: 400; color: #767676; padding-bottom: 8px; padding-right: 8px;') #{row.description}
+                                                                each row in data
+                                                                    td(width='50%', style='padding-top: 16px; padding-right: 16px; text-align: left;')
+                                                                        div(style='background-color: #f9f9f9;')
+                                                                            table(cellpadding='0', cellspacing='0', border='0', width='100%')
+                                                                                tbody
+                                                                                    tr
+                                                                                        td(width='20%')
+                                                                                            img(style='vertical-align: center; padding-left: 8px; padding-right: 13px; width: 45px; height: 45px;', alt="", src="#{row.icon}")
+                                                                                        td(width='80%')
+                                                                                            div(style='font-size: 24px; font-weight: 600; padding-top: 8px; padding-right: 8px; font-family: Poppins, sans-serif;') ₹#{row.savings}
+                                                                                            div(style='font-size: 16px; font-weight: 400; color: #767676; padding-bottom: 8px; padding-right: 8px; font-family: Poppins, sans-serif;') #{row.description}
                                         | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
                                         tr
-                                            td(width='100%')
-                                                div(style='font-size: 20px; font-weight: 400;') You are among our top customers to get this extra care. And thats not all, here’s an offer just for you!
+                                            td(style="padding-right: 16px; text-align: left;", width='100%')
+                                                div(style='font-size: 20px; font-weight: 400; font-family: Poppins, sans-serif;') You are among our top customers to get this extra care. And thats not all, here’s an offer just for you!
                     | &#x9;&#x9;&#x9;&#x9;
                     tr
-                        td(colspan="2" width='100%' style='padding: 8px 16px 0px 16px;')
-                            div(style='font-weight: 600; font-size: 24px; color: #0094d8;') Limited time offer !
-                            div(style='font-size: 20px; font-weight: 400;')
+                        td(style='padding: 8px 16px 0px 16px; text-align: left;', colspan="2", width='100%')
+                            div(style='font-weight: 600; font-size: 24px; color: #0094d8; font-family: Poppins, sans-serif;') Limited time offer !
+                            div(style='font-size: 20px; font-weight: 400; font-family: Poppins, sans-serif;')
                                 div If you renew before expiry you get
                                 ul(style='margin: 0;')
                                     li 
-                                        span(style='font-weight: 600;') Extra 15 days 
+                                        span(style='font-weight: 600; font-family: Poppins, sans-serif;') Extra 15 days 
                                         | of membership free
                                     li
-                                        span(style='font-weight: 600;') 6 months extended validity 
+                                        span(style='font-weight: 600; font-family: Poppins, sans-serif;') 6 months extended validity 
                                         | on current unused benefits
-                                div(style='font-size: 18px; color: #767676;') Benefits will be added to your renewed membership
+                                div(style='font-size: 18px; color: #767676; font-family: Poppins, sans-serif;') Benefits will be added to your renewed membership
                     | &#x9;&#x9;&#x9;&#x9;
                     if show_savings
                         tr
-                            td(colspan="2" width='100%' style='padding: 24px 16px 0px 16px;')
+                            td(style='padding: 24px 16px 0px 16px;', colspan="2", width='100%')
                                 a(href='{{ctaLink}}' target='_blank')
                                     img(src='http://res.cloudinary.com/dusqx2w0c/image/upload/v1625137818/marketing/aiy9zz9cdjrmzpuzha1v.gif' width='100%')
 
                     | &#x9;&#x9;&#x9;&#x9;
                     tr
-                        td(colspan="2" width='100%' style='padding: 24px 16px 24px 16px;')
-                            div(style='font-weight: 500; font-size: 20px;') With lots of care,
-                            div(style='font-weight: 400; font-size: 18px; color: #767676;') Care Plan team
+                        td(style='padding: 24px 16px 24px 16px; text-align: left;', colspan="2", width='100%')
+                            div(style='font-weight: 500; font-size: 20px; font-family: Poppins, sans-serif;') With lots of care,
+                            div(style='font-weight: 400; font-size: 18px; color: #767676; font-family: Poppins, sans-serif;') Care Plan team
                     | &#x9;&#x9;&#x9;&#x9;
                     tr
                         td(colspan="2" width='100%')
-                            hr(style='width: 100%; height: 4px; background-color: #f0f0f0; border: none;')
+                            hr(style="border:0px; border-top:4px solid #F0F0F0; height:4px; color: #F0F0F0; background: #F0F0F0; margin:0px;")
                     | &#x9;&#x9;&#x9;&#x9;
                     tr
-                        td(colspan="2" width='100%' style='padding: 16px;')
+                        td(style='padding: 16px;', colspan="2", width='100%')
                             table(cellpadding='0', cellspacing='0', border='0', width='100%')
                                 tbody
                                     | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
@@ -147,57 +134,57 @@ html
                                         td(style='vertical-align: baseline; padding-right: 40px; overflow-x: hidden;')
                                             div 
                                                 a(href='https://www.1mg.com/' target='_blank')
-                                                    img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625074275/marketing/v74c9brcyacmvyolhddy.png' width='162px' height='35px' style='display: block;')
-                                                div(style='font-size: 14px; font-weight: 400; padding-top: 8px;') Bringing Care to Health
+                                                    img(style='display: block;', src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625074275/marketing/v74c9brcyacmvyolhddy.png', width='162px', height='35px')
+                                                div(style='font-size: 14px; font-weight: 400; padding-top: 8px; font-family: Poppins, sans-serif;') Bringing Care to Health
                                         td(style='vertical-align: baseline; overflow-x: hidden;')
                                             div(style=' text-align: center;') 
-                                                img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625075574/marketing/qimy8oq2yvck1rrupsja.png' width='31px' height='33px' style='display: block; margin: 0 auto;')
-                                                div(style='font-size: 12px; font-weight: 400; padding-top: 8px; color: #767676;') Other Medicines
+                                                img(style='display: block; margin: 0 auto;', src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625075574/marketing/qimy8oq2yvck1rrupsja.png', width='31px', height='33px')
+                                                div(style='font-size: 12px; font-weight: 400; padding-top: 8px; color: #767676; font-family: Poppins, sans-serif;') Other Medicines
                                         td(style='vertical-align: middle; padding-left: 8px; padding-right: 8px; overflow-x: hidden;')
                                             div(style='border-left: 1px solid #767676; height: 27px;')
                                         td(style='vertical-align: baseline; overflow-x: hidden;')
                                             div(style=' text-align: center;') 
-                                                img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625075629/marketing/x2tac8y73z0hheaqytyb.png' width='27px' height='30px' style='display: block; margin: 0 auto;')
-                                                div(style='font-size: 12px; font-weight: 400; padding-top: 8px; color: #767676;') Book lab test
+                                                img(style='display: block; margin: 0 auto;', src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625075629/marketing/x2tac8y73z0hheaqytyb.png', width='27px', height='30px')
+                                                div(style='font-size: 12px; font-weight: 400; padding-top: 8px; color: #767676; font-family: Poppins, sans-serif;') Book lab test
                                         td(style='vertical-align: middle; padding-left: 8px; padding-right: 8px; overflow-x: hidden;')
                                             div(style='border-left: 1px solid #767676; height: 27px;')
                                         td(style='vertical-align: baseline; overflow-x: hidden;')
                                             div(style=' text-align: center;')  
-                                                img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625075055/marketing/vutfrn94pnl0vnonflfn.png' width='31px' height='33px' style='display: block; margin: 0 auto;')
-                                                div(style='font-size: 12px; font-weight: 400; padding-top: 8px; color: #767676;') Consult doctors
-                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;                    
+                                                img(style='display: block; margin: 0 auto;', src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625075055/marketing/vutfrn94pnl0vnonflfn.png', width='31px', height='33px')
+                                                div(style='font-size: 12px; font-weight: 400; padding-top: 8px; color: #767676; font-family: Poppins, sans-serif;') Consult doctors
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;                   
                                     tr
-                                        td(width='100%' style='padding-top: 32px; padding-bottom: 8px;' colspan='6')
+                                        td(style='padding-top: 32px; padding-bottom: 8px;', width='100%', colspan='6')
                                             table(cellpadding='0', cellspacing='0', border='0', width='100%')
                                                 tbody
                                                     tr
-                                                        td(width='100%')
-                                                            div(style='font-size: 14px; color: #767676;') Need help?
-                                                            a(style='font-size: 14px; color: #ff6f61; padding-top: 16px;' href='https://www.1mg.com/support/chat?page_id=CONTACT_US::chat_icon&bu=pharmacy&label=Default' target="_bank") Contact us here
+                                                        td(style="text-align: left;" width='100%')
+                                                            div(style='font-size: 14px; color: #767676; font-family: Poppins, sans-serif;') Need help?
+                                                            a(style='font-size: 14px; color: #ff6f61; padding-top: 16px; font-family: Poppins, sans-serif;', href='https://www.1mg.com/support/chat?page_id=CONTACT_US::chat_icon&bu=pharmacy&label=Default', target="_blank") Contact us here
                                     | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;                           
                                     tr
                                         td(colspan='6')
-                                            hr(style='width: 100%; height: 1px; background-color: #f0f0f0; border: none;')
+                                            hr(style="border:0px; border-top:1px solid #F0F0F0; height:1px; color: #F0F0F0; background: #F0F0F0; margin:0px;")
                                     | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
                                     tr
-                                        td(colspan='3')
-                                            div(style='font-size: 16px; color: #a9a9a9; padding-top: 40px;') Download the app
+                                        td(style="text-align: left;", colspan='3')
+                                            div(style='font-size: 16px; color: #a9a9a9; padding-top: 40px; font-family: Poppins, sans-serif;') Download the app
                                             a(href='https://play.google.com/store/apps/details?id=com.aranoah.healthkart.plus&utm_source=download_android_app&utm_medium=email&utm_campaign=Careplan_welcome' target='_blank')
-                                                img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625076731/marketing/x2y2jlp0cwwixorirm69.png' width='140px' height='40px' style='padding-top: 16px; padding-right: 8px;')
+                                                img(style='display: inline; padding-top: 16px; padding-right: 8px;', src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625076731/marketing/x2y2jlp0cwwixorirm69.png', width='140px', height='40px')
                                             a(href='https://apps.apple.com/in/app/1mg/id554578419?utm_source=download_ios_app&utm_medium=email&utm_campaign=Careplan_welcome' target='_blank')
-                                                img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625076805/marketing/go0c8yjy9feftvulco5v.png' width='140px' height='40px' style='padding-top: 16px;')
-                                        td(colspan='3')
-                                            div(style='font-size: 16px; color: #a9a9a9; padding-top: 40px;') Connect with us
+                                                img(style='display: inline; padding-top: 16px;', src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625076805/marketing/go0c8yjy9feftvulco5v.png', width='140px', height='40px')
+                                        td(style="text-align: left;", colspan='3')
+                                            div(style='font-size: 16px; color: #a9a9a9; padding-top: 40px; font-family: Poppins, sans-serif;') Connect with us
                                             a(href='https://www.facebook.com/1mgOfficial/' target='_blank')
-                                                img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625076551/marketing/myyyetdzqygs8shjqdmn.png' width='32px' height='32px' style='padding-top: 20px; padding-right: 15px;')
+                                                img(style='display: inline; padding-top: 20px; padding-right: 15px;', src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625076551/marketing/myyyetdzqygs8shjqdmn.png', width='32px', height='32px')
                                             a(href='https://twitter.com/1mgOfficial' target='_blank')
-                                                img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625076623/marketing/m2hyr2aqygqjei375oad.png' width='27px' height='20px' style='padding-top: 15px; padding-right: 15px;')
+                                                img(style='display: inline; padding-top: 15px; padding-right: 15px;', src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625076623/marketing/m2hyr2aqygqjei375oad.png', width='27px', height='20px')
                                             a(href='https://www.instagram.com/1mgofficialpage/' target='_blank')
-                                                img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625076647/marketing/v3d6qhiivxyx7fmvwrkl.png' width='27px' height='27px' style='padding-top: 22px; padding-right: 15px;')
+                                                img(style='display: inline; padding-top: 22px; padding-right: 15px;', src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625076647/marketing/v3d6qhiivxyx7fmvwrkl.png', width='27px', height='27px')
                                             a(href='https://www.youtube.com/channel/UCNUvsEya-Jq_Pw1t6R47hew' target="_blank")
-                                                img(src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625076681/marketing/abty9celdoit9627get0.png' width='27px' height='24px' style='padding-top: 15px;')
+                                                img(style='display: inline; padding-top: 15px;', src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1625076681/marketing/abty9celdoit9627get0.png', width='27px', height='24px')
                                     | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
                                     tr
-                                        td(colspan='6')
-                                            div(style='font-size: 14px; padding-top: 40px; color: #767676; padding-bottom: 8px;') © 2021 1mg, All rights reserved
-                                            div(style='font-size: 12px; color: #a9a9a9;') Tower -B-46/4, 5th floor, Presidency Building, Mehrauli Gurgaon Road, Sector-14, Gurugram, Haryana 122001 India
+                                        td(style="text-align: left;", colspan='6')
+                                            div(style='font-size: 14px; padding-top: 40px; color: #767676; padding-bottom: 8px; font-family: Poppins, sans-serif;') © 2021 1mg, All rights reserved
+                                            div(style='font-size: 12px; color: #a9a9a9; font-family: Poppins, sans-serif;') Tower -B-46/4, 5th floor, Presidency Building, Mehrauli Gurgaon Road, Sector-14, Gurugram, Haryana 122001 India

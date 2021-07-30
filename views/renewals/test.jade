@@ -1,0 +1,59 @@
+
+                    if show_savings
+                        tr
+                            td(style='padding: 16px 16px 16px 16px;', colspan="2", width='100%')
+                                table(cellpadding='0', cellspacing='0', border='0', width='100%', style='width:calc(100%);max-width:calc(600px); background: #fffff; margin: 0 auto;')
+                                    tbody
+                                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                        tr
+                                            td(width='100%')
+                                                div(style='font-weight: 600; font-size: 20px; color: #3b3b3b;') Heres a recap of your savings
+                                                div(style='font-weight: 500; font-size: 18px; color: #767676; padding-top: 8px;') Total savings on your membership : ₹#{total_savings}
+                                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                        tr
+                                            td(style='padding-top: 16px; padding-bottom: 16px;', width='100%')
+                                                table(cellpadding='0', cellspacing='0', border='0', width='100%')
+                                                    tbody
+                                                        each data in savings_data
+                                                            tr
+                                                                each row, index in data
+                                                                    if (index == 0)
+                                                                        td(width='50%', style='padding-top: 16px; padding-right: 16px;')
+                                                                            div(style='background-color: #f9f9f9;')
+                                                                                table(cellpadding='0', cellspacing='0', border='0', width='100%')
+                                                                                    tbody
+                                                                                        tr
+                                                                                            td(width='20%')
+                                                                                                img(style='vertical-align: center; padding-left: 8px; padding-right: 13px;', src='{{row.icon}}', width='45px', height='45px')
+                                                                                            td(width='80%')
+                                                                                                div(style='font-size: 24px; font-weight: 600; padding-top: 8px; padding-right: 8px;') ₹#{row.savings}
+                                                                                                div(style='font-size: 16px; font-weight: 400; color: #767676; padding-bottom: 8px; padding-right: 8px;') #{row.description}
+                                                                    else
+                                                                        td(width='50%' style='padding-top: 16px;')
+                                                                            div(style='background-color: #f9f9f9;')
+                                                                                table(cellpadding='0', cellspacing='0', border='0', width='100%')
+                                                                                    tbody
+                                                                                        tr
+                                                                                            td(width='20%')
+                                                                                                img(style='vertical-align: center; padding-left: 8px; padding-right: 13px;', src='{{row.icon}}', width='45px', height='45px')
+                                                                                            td(width='80%')
+                                                                                                div(style='font-size: 24px; font-weight: 600; padding-top: 8px; padding-right: 8px;') ₹#{row.savings}
+                                                                                                div(style='font-size: 16px; font-weight: 400; color: #767676; padding-bottom: 8px; padding-right: 8px;') #{row.description}
+                                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                        tr
+                                            td(width='100%')
+                                                div(style='font-size: 20px; font-weight: 400;') You are among our top customers to get this extra care. And thats not all, here’s an offer just for you!
+
+                    if show_savings 
+                        tr 
+                            td(style='padding: 16px 0px 0px 16px; text-align: left;', colspan="2", width="100%")
+                                div(style='display: block;')
+                                    ul(style='list-style: none; padding: 0; margin: 0;')
+                                        each data in savings_data
+                                            div(style="text-align: left; width: 50%; float: right; padding: 0px 16px 16px 0px;")
+                                                li(style='list-style: none; vertical-align: top; display: inline-block; margin: 0px; width: 100%; text-align: left; background-color: #f9f9f9;')
+                                                    img(style='margin-top: 10px; width: 45px; height: 45px; display: inline;', alt='', src= "#{data.icon}")
+                                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                                    div(style="float: right; padding-right: 25px;")
+                                                        span(style='font-size: 24px; font-weight: 600; padding-top: 8px; padding-right: 8px; display: block;') ₹#{data.savings}
+                                                        span(style='font-size: 16px; font-weight: 400; color: #767676; padding-bottom: 8px; padding-right: 8px; display: block;') #{data.description}
