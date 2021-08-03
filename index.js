@@ -59,20 +59,12 @@ app.get("/example", (req, res) => {
     res.render("example");
 })
 
-app.get("/bookf", (req, res) => {
-    res.render("invoice/bookedf");
+app.get("/confirm", (req, res) => {
+    res.render("invoice/confirm");
 })
 
-app.get("/bookp", (req, res) => {
-    res.render("invoice/bookedp");
-})
-
-app.get("/cancelp", (req, res) => {
-    res.render("invoice/cancelp");
-})
-
-app.get("/cancelf", (req, res) => {
-    res.render("invoice/cancelf");
+app.get("/cancel", (req, res) => {
+    res.render("invoice/cancel");
 })
 
 // Listening our app on port 3000
