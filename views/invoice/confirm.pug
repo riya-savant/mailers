@@ -31,7 +31,7 @@ html
                     tr
                         td(style='padding-top: 16px; padding-left: 16px;', width="80%")
                             img(style='height: 30px; width: 98px;', alt='', src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1627924999/cfx18yefzgoclhoyvmjh.png')
-                        td(style='padding-top: 16px; padding-right: 16px;', width="20%")
+                        td(style='padding-top: 16px; padding-right: 16px; text-align: right;', width="20%")
                             img(style='height: 30px; width: 129px;', alt='', src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1627923983/bbhxsxwbcmaam4brayyw.png')
                     | &#x9;&#x9;&#x9;&#x9;
                     tr
@@ -61,7 +61,7 @@ html
                                                     | You have availed your Care Plan lab test benefit to book 
                                                     span(style="font-weight: 500;") #{test_name}. 
                                                     | Your lab test has been scheduled for 
-                                                    span(style="font-weight: 500;") #{date}
+                                                    span(style="font-weight: 500;") #{date} 
                                                     | between 
                                                     span(style="font-weight: 500;") #{slot}.
                                                 div(style='font-size: 18px; font-weight: 500; padding-top: 32px;') #{tests_left}
@@ -87,7 +87,7 @@ html
                             hr(style="border:0px; border-top: 1px solid #F0F0F0; height: 1px; color: #F0F0F0; background: #F0F0F0; margin:0px;")
                     | &#x9;&#x9;&#x9;&#x9;
                     tr
-                        td(style='padding: 16px 16px 32px 16px; text-align: left; font-family: Poppins, sans-serif;', width='100%', colspan="2" )
+                        td(style='padding: 16px 16px 32px 16px; text-align: left; font-family: Poppins, sans-serif;', colspan="2", width='100%')
                             table(cellpadding='0', cellspacing='0', border='0', width='100%')
                                 tbody
                                     tr
@@ -96,25 +96,25 @@ html
                                     tr
                                         td(style="padding-top: 16px;", width="50%")
                                             div(style="font-size: 18px; font-weight: 400;") #{test_name}
-                                        td(width="50%")
+                                        td(style="text-align: right;", width="50%")
                                             div(style="font-size: 18px; font-weight: 500; text-align: right;") ₹#{test_price}
                                     tr
                                         td(style="padding-top: 8px;", width="50%")
                                             div(style="font-size: 18px; font-weight: 400;") Care Plan Discount
-                                        td(width="50%")
+                                        td(style="text-align: right;", width="50%")
                                             div(style="font-size: 18px; font-weight: 500; text-align: right; color: #208376;") (-)₹#{discount}
                                     tr
                                         td(style="padding-top: 8px;", width="50%")
                                             div(style="font-size: 18px; font-weight: 400;") Collection Charges
-                                        td(width="50%")
+                                        td(style="text-align: right;", width="50%")
                                             div(style="font-size: 18px; font-weight: 500; text-align: right; color: #208376;") Free for members
                                     tr
-                                        td(style='padding: 16px 0px;', width='100%', colspan="2")
+                                        td(style='padding: 16px 0px;', colspan="2", width='100%')
                                             hr(style='width: 100%; height: 1px; background-color: #f0f0f0; border: none;')
                                     tr
                                         td(width="50%")
                                             div(style="font-size: 20px; font-weight: 600;") Total Paid
-                                        td(width="50%")
+                                        td(style="text-align: right;", width="50%")
                                             div(style="font-size: 20px; font-weight: 600; text-align: right;") ₹#{total_paid}
                     | &#x9;&#x9;&#x9;&#x9;
                     tr
@@ -122,11 +122,11 @@ html
                             hr(style="border:0px; border-top: 2px solid #F0F0F0; height: 2px; color: #F0F0F0; background: #F0F0F0; margin:0px;")
                     | &#x9;&#x9;&#x9;&#x9;
                     tr
-                        td(style="padding: 32px 16px; text-align: left; font-family: Poppins, sans-serif;", width="100%", colspan="2")
+                        td(style="padding: 32px 16px; text-align: left; font-family: Poppins, sans-serif;", colspan="2", width="100%")
                             div(style="font-size: 20px; font-weight: 600;") Patient Details
                             div(style="font-size: 18px; padding-top: 16px") #{patient_name}
                             div(style="font-size: 18px; padding-top: 8px") #{address}
-                            div(style="font-size: 18px; padding-top: 8px;") Phone : #{phone}
+                            div(style="font-size: 18px; padding-top: 8px;") #{phone}
                     | &#x9;&#x9;&#x9;&#x9;
                     tr
                         td(colspan="2", width='100%')
