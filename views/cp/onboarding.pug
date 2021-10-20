@@ -1,0 +1,241 @@
+- var ctaLink = activate_membership_url
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        | &#x9;
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        | &#x9;
+        title Onboarding Mailer
+        | &#x9;
+        link(href='https://fonts.googleapis.com/css?family=Poppins:400,600,700,800&display=swap', rel='stylesheet')
+        | &#x9;
+        style.
+          body {
+          margin: 0;
+          padding: 0;
+          font-size: 0;
+          -ms-text-size-adjust: 100%;
+          -webkit-text-size-adjust: 100%;
+          font-family: 'Poppins', sans-serif;
+          color: #000000;
+          }
+          img {
+          -ms-interpolation-mode: bicubic;
+          }
+    body(style="margin: 0; padding: 0; font-size: 0; font-family: Poppins, sans-serif; background-color: #FFFFFF;")
+        center(style="background: #F9F9F9; padding-top: 10px; padding-bottom: 10px;") 
+            | &#x9;&#x9;
+            table(cellpadding='0', cellspacing='0', border='0', width='100%', style='width:calc(100%);max-width:calc(600px); background: #FFFFFF; margin: 0 auto; border: 1px solid #F0F0F0;')
+                tbody
+                    tr
+                        td(style='padding-top: 16px; padding-left: 16px;', width="80%")
+                            img(style='height: 30px; width: 98px;', alt='', src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1627924999/cfx18yefzgoclhoyvmjh.png')
+                        td(style='padding-top: 16px; padding-right: 16px; text-align: right;', width="20%")
+                            img(style='height: 24px; width: 103px;', alt='', src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1634731641/aeguwizguobb6g2fqf6t.png')
+                    | &#x9;&#x9;&#x9;&#x9;
+                    tr
+                        td(style="padding: 16px 0px 0px 0px;", colspan="2", width="100%")
+                            hr(style="border:0px; border-top: 1px solid #F0F0F0; height: 1px; color: #F0F0F0; background: #F0F0F0; margin:0px;")
+                    | &#x9;&#x9;&#x9;&#x9;
+                    tr
+                        td(style="padding: 16px 0 8px 0;", width="100%", colspan="2")
+                            table(cellpadding='0', cellspacing='0', border='0', width='100%')
+                                tbody
+                                    tr
+                                        td(width='50%')
+                                            div(style='text-align: right; font-family: Poppins, sans-serif; font-size: 24px; font-weight: 600; padding-right: 5px; color: #3B3B3B;') Welcome 
+                                        td(width='50%')
+                                            img(style="padding-left: 5px;", height="29px", width="169px", src="https://res.cloudinary.com/dusqx2w0c/image/upload/v1634733613/ngexwzev8oscnyfjljas.png")
+                    | &#x9;&#x9;&#x9;&#x9;
+                    tr
+                        td(style="padding-bottom: 16px;", width="100%", colspan="2")    
+                            div(style='font-size: 24px; font-weight: 400; text-align: center; color: #767676;') You are now a premium member of 1mg
+                    | &#x9;&#x9;&#x9;&#x9;
+                    tr
+                        td(colspan="2", width='100%')
+                            hr(style="border:0px; border-top: 1px solid #F0F0F0; height: 1px; color: #F0F0F0; background: #F0F0F0; margin:0px;")
+                    | &#x9;&#x9;&#x9;&#x9;
+                    tr
+                        td(style='padding: 16px; text-align: left; font-family: Poppins, sans-serif;', colspan="2", width='100%')
+                            table(cellpadding='0', cellspacing='0', border='0', width='100%')
+                                tbody
+                                    tr
+                                        td(width='100%', colspan="2")
+                                            div
+                                                div(style='font-weight: 500; font-size: 18px;') Hello Care Plan member,
+                                                div(style='font-size: 16px; font-weight: 400; padding-top: 16px;') As an employee at Tata 1mg, we offer you the best healthcare membership available today with great benefits.
+                                                div(style='font-size: 16px; font-weight: 600;')
+                                                    | Please login to www.1mg.com with your official e-mail id to activate your membership. 
+                                                    span(style="font-weight: 400;") Once you activate your membership, it  will be renewed automatically every 3-months.
+                                                div(style='margin: 16px 0 32px 0; text-align: center; cursor: pointer; background-color: #FF6F61; width: 100%; border: none; border-radius: 4px; padding: 12px 0;')
+                                                    a(style='font-size: 20px; font-weight: 600; color: #ffffff;  cursor: pointer; text-decoration: none; margin-top: 20px;', href='{{ctaLink}}', target='_blank') Activate my membership
+                                    tr
+                                        td(width='100%', colspan="2")
+                                            div(style="font-size: 18px; font-weight: 500;") As a member you'll recieve
+                                    tr
+                                        td(style="padding-top: 16px;", width="100%", colspan="2")
+                                            table(cellpadding='0', cellspacing='0', border='0', width='100%')
+                                                tbody
+                                                    tr
+                                                        td(style="vertical-align: top; padding-right: 10px;", width='10%') 
+                                                            img(height="60px", width="60px", src="https://res.cloudinary.com/dusqx2w0c/image/upload/v1634731192/kb6madnhso9eevddpacb.png")
+                                                        td(width="90%")
+                                                            div(style="font-size: 16px; font-weight: 600;") 1 Free Lab test every 3 months
+                                                            div(style="font-size: 14px; font-weight: 400; padding-top: 4px;") Get a free CBC or HbA1C test or upgrade to any one of our premium tests. 
+                                    tr
+                                        td(style="padding-top: 16px;", width="100%", colspan="2")
+                                            table(cellpadding='0', cellspacing='0', border='0', width='100%')
+                                                tbody
+                                                    tr
+                                                        td(style="vertical-align: top; padding-right: 10px;", width='10%') 
+                                                            img(height="60px", width="60px", src="https://res.cloudinary.com/dusqx2w0c/image/upload/v1634731242/pqzo6un9ofqlplckekbd.png")
+                                                        td(width="90%")
+                                                            div(style="font-size: 16px; font-weight: 600;") 1 Free E-Consultation every 3 months
+                                                            div(style="font-size: 14px; font-weight: 400; padding-top: 4px;") Get a free E-consultation from experts around 32 different specialities including dieticians and nutritionist. 
+                                    tr
+                                        td(style="padding-top: 16px;", width="100%", colspan="2")
+                                            table(cellpadding='0', cellspacing='0', border='0', width='100%')
+                                                tbody
+                                                    tr
+                                                        td(style="vertical-align: top; padding-right: 10px;", width='10%') 
+                                                            img(height="60px", width="60px", src="https://res.cloudinary.com/dusqx2w0c/image/upload/v1634748518/rvyu2hfkhlt4yidkk6qc.png")
+                                                        td(width="90%")
+                                                            div(style="font-size: 16px; font-weight: 600;") Get extra 2% discounts
+                                                            div(style="font-size: 14px; font-weight: 400; padding-top: 4px;") Guaranteed savings over & above promotional offers. Extra 2% discounts on all prescription medicine purchases. 
+                                    tr
+                                        td(style="padding-top: 16px;", width="100%", colspan="2")
+                                            table(cellpadding='0', cellspacing='0', border='0', width='100%')
+                                                tbody
+                                                    tr
+                                                        td(style="vertical-align: top; padding-right: 10px;", width='10%') 
+                                                            img(height="60px", width="60px", src="https://res.cloudinary.com/dusqx2w0c/image/upload/v1634748648/nephhp8otc9ntral6ftk.png")
+                                                        td(width="90%")
+                                                            div(style="font-size: 16px; font-weight: 600;") Extra 5% cashback on all orders
+                                                            div(style="font-size: 14px; font-weight: 400; padding-top: 4px;") Earn additional 5% cashback on all your medicine and health product orders, lab tests and doctor consultations. 100% cashback redemption across all Tata partners, online or offline. 
+                                    tr
+                                        td(style="padding-top: 16px;", width="100%", colspan="2")
+                                            table(cellpadding='0', cellspacing='0', border='0', width='100%')
+                                                tbody
+                                                    tr
+                                                        td(style="vertical-align: top; padding-right: 10px;", width='10%') 
+                                                            img(height="60px", width="60px", src="https://res.cloudinary.com/dusqx2w0c/image/upload/v1634748765/je1hklwclagiekgjgpvu.png")
+                                                        td(width="90%")
+                                                            div(style="font-size: 16px; font-weight: 600;") Rapid Delivery
+                                                            div(style="font-size: 14px; font-weight: 400; padding-top: 4px;") Now delivering quicker than before. Members enjoy free or discounted same day and next day delivery in selected cities and expanding soon to all cities
+                                    tr
+                                        td(style="padding-top: 16px;", width="100%", colspan="2")
+                                            table(cellpadding='0', cellspacing='0', border='0', width='100%')
+                                                tbody
+                                                    tr
+                                                        td(style="vertical-align: top; padding-right: 10px;", width='10%') 
+                                                            img(height="60px", width="60px", src="https://res.cloudinary.com/dusqx2w0c/image/upload/v1634748828/bdrweciterd8bxquijrc.png")
+                                                        td(width="90%")
+                                                            div(style="font-size: 16px; font-weight: 600;") No Shipping Charges
+                                                            div(style="font-size: 14px; font-weight: 400; padding-top: 4px;") No shipping charges on orders above Rs.50. Unlimited Free shipping on orders above Rs.500 Free shipping on 20 orders below Rs.500
+                                    tr
+                                        td(style="padding-top: 16px;", width="100%", colspan="2")
+                                            table(cellpadding='0', cellspacing='0', border='0', width='100%')
+                                                tbody
+                                                    tr
+                                                        td(style="vertical-align: top; padding-right: 10px;", width='10%') 
+                                                            img(height="60px", width="60px", src="https://res.cloudinary.com/dusqx2w0c/image/upload/v1634748998/hwpn1e3ukdizbnvlczsn.png")
+                                                        td(width="90%")
+                                                            div(style="font-size: 16px; font-weight: 600;") Early Access Sale
+                                                            div(style="font-size: 14px; font-weight: 400; padding-top: 4px;") Be among the first ones to shop during our sale days. Get exclusive deals across all categories.
+                                    tr
+                                        td(style="padding-top: 16px;", width="100%", colspan="2")
+                                            table(cellpadding='0', cellspacing='0', border='0', width='100%')
+                                                tbody
+                                                    tr
+                                                        td(style="vertical-align: top; padding-right: 10px;", width='10%') 
+                                                            img(height="60px", width="60px", src="https://res.cloudinary.com/dusqx2w0c/image/upload/v1634749090/rplxqvmkkwq23cy7rpgl.png")
+                                                        td(width="90%")
+                                                            div(style="font-size: 16px; font-weight: 600;") Premium Customer Support
+                                                            div(style="font-size: 14px; font-weight: 400; padding-top: 4px;") Members would be entitled to our dedicated customer support experts. We are committed to providing you with responsive assistance and resolution. Your queries are our priority. Fastest support to our premium members.       
+                                    tr
+                                        td(width="100%", colspan="2")
+                                            div(style='margin: 16px 0; text-align: center; cursor: pointer; background-color: #FF6F61; width: 100%; border: none; border-radius: 4px; padding: 12px 0;')
+                                                a(style='font-size: 20px; font-weight: 600; color: #ffffff;  cursor: pointer; text-decoration: none; margin-top: 20px;', href='{{ctaLink}}', target='_blank') Activate my membership
+                                    tr
+                                        td(width="100%", colspan="2")
+                                            div(style="margin: 0 0 4px 0; font-size: 16px; font-weight: 600; color: #767676;") Disclaimer
+                                            div(style="margin-bottom: 32px; font-size: 14px; font-weight: 400; color: #A9A9A9;") Care Plan discount are automatically applied on the items in your cart. You may choose to apply any other Tata 1mg discount coupons available to you on the app or website instead of Care Plan discount.
+
+                    | &#x9;&#x9;&#x9;&#x9;
+                    tr
+                        td(colspan="2", width='100%')
+                            hr(style="border:0px; border-top: 2px solid #F0F0F0; height: 2px; color: #F0F0F0; background: #F0F0F0; margin:0px;")
+                    | &#x9;&#x9;&#x9;&#x9;
+                    tr
+                        td(style='padding: 32px 16px 16px 16px; text-align: left; font-family: Poppins, sans-serif;', colspan="2", width='100%')
+                            div(style='font-weight: 500; font-size: 20px;') With lots of care,
+                            div(style='font-weight: 400; font-size: 18px; color: #767676;') Care Plan team
+                    | &#x9;&#x9;&#x9;&#x9;
+                    tr
+                        td(colspan="2", width='100%')
+                            hr(style="border:0px; border-top:4px solid #F0F0F0; height:4px; color: #F0F0F0; background: #F0F0F0; margin:0px;")
+                    | &#x9;&#x9;&#x9;&#x9;
+                    tr
+                        td(style='padding: 16px; font-family: Poppins, sans-serif;', colspan="2", width='100%')
+                            table(cellpadding='0', cellspacing='0', border='0', width='100%')
+                                tbody
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    tr
+                                        td(style='vertical-align: baseline; padding-right: 40px; overflow-x: hidden;')
+                                            div 
+                                                a(href='https://www.1mg.com/' target='_blank')
+                                                    img(style='display: block;', src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1627925026/is7vr6pawfxkwrrudquu.png', width='167px', height='52px')
+                                                div(style='font-size: 14px; font-weight: 400; padding-top: 8px; text-align: left;') Bringing Care to Health
+                                        td(style='vertical-align: baseline; overflow-x: hidden;')
+                                            div(style=' text-align: center;') 
+                                                img(style='display: block; margin: 0 auto;', src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1628488926/ov2mvwly5v1pa9sz1pfb.png', width='48px', height='48px')
+                                                div(style='font-size: 12px; font-weight: 400; padding-top: 8px; color: #767676;') Order Medicines
+                                        td(style='vertical-align: middle; padding-left: 8px; padding-right: 8px; overflow-x: hidden;')
+                                            div(style='border-left: 1px solid #767676; height: 27px;')
+                                        td(style='vertical-align: baseline; overflow-x: hidden;')
+                                            div(style=' text-align: center;') 
+                                                img(style='display: block; margin: 0 auto;', src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1628488947/zvqfuvyv02uiobzdtkl2.png', width='48px', height='48px')
+                                                div(style='font-size: 12px; font-weight: 400; padding-top: 8px; color: #767676;') Book lab test
+                                        td(style='vertical-align: middle; padding-left: 8px; padding-right: 8px; overflow-x: hidden;')
+                                            div(style='border-left: 1px solid #767676; height: 27px;')
+                                        td(style='vertical-align: baseline; overflow-x: hidden;')
+                                            div(style=' text-align: center;')  
+                                                img(style='display: block; margin: 0 auto;', src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1628488966/pku2ertkw099kaqfgq9n.png', width='48px', height='48px')
+                                                div(style='font-size: 12px; font-weight: 400; padding-top: 8px; color: #767676;') Consult doctors
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;                   
+                                    tr
+                                        td(style='padding-top: 32px; padding-bottom: 8px;', width='100%', colspan='6')
+                                            table(cellpadding='0', cellspacing='0', border='0', width='100%')
+                                                tbody
+                                                    tr
+                                                        td(style="text-align: left;" width='100%')
+                                                            div(style='font-size: 14px; color: #767676;') Need help?
+                                                            a(style='font-size: 14px; color: #ff6f61; padding-top: 16px;', href='https://www.1mg.com/support/chat?page_id=CONTACT_US::chat_icon&bu=pharmacy&label=Default', target="_blank") Contact us here
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;                           
+                                    tr
+                                        td(colspan='6')
+                                            hr(style="border:0px; border-top:1px solid #F0F0F0; height:1px; color: #F0F0F0; background: #F0F0F0; margin:0px;")
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    tr
+                                        td(style="text-align: left;", colspan='3')
+                                            div(style='font-size: 16px; color: #a9a9a9; padding-top: 40px;') Download the app
+                                            a(href='https://play.google.com/store/apps/details?id=com.aranoah.healthkart.plus&utm_source=download_android_app&utm_medium=email&utm_campaign=Careplan_welcome' target='_blank')
+                                                img(style='display: inline; padding-top: 16px; padding-right: 8px;', src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1628488892/la2an9j6kdw6jrs2loak.png', width='140px', height='40px')
+                                            a(href='https://apps.apple.com/in/app/1mg/id554578419?utm_source=download_ios_app&utm_medium=email&utm_campaign=Careplan_welcome' target='_blank')
+                                                img(style='display: inline; padding-top: 16px;', src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1628488842/mu93fukulmqhmrd46lej.png', width='140px', height='40px')
+                                        td(style="text-align: left;", colspan='3')
+                                            div(style='font-size: 16px; color: #a9a9a9; padding-top: 40px;') Connect with us
+                                            a(href='https://www.facebook.com/1mgOfficial/' target='_blank')
+                                                img(style='display: inline; padding-top: 16px; padding-right: 15px;', src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1627889104/qsoskb2mklmfhcy648lc.png', width='40px', height='40px')
+                                            a(href='https://twitter.com/1mgOfficial' target='_blank')
+                                                img(style='display: inline; padding-top: 16px; padding-right: 15px;', src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1627889138/cllhopjyonxpqmjqzgfi.png', width='40px', height='40px')
+                                            a(href='https://www.instagram.com/1mgofficialpage/' target='_blank')
+                                                img(style='display: inline; padding-top: 16px; padding-right: 15px;', src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1627889168/prxuknetpb5awl2otvz9.png', width='40px', height='40px')
+                                            a(href='https://www.youtube.com/channel/UCNUvsEya-Jq_Pw1t6R47hew' target="_blank")
+                                                img(style='display: inline; padding-top: 16px;', src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1627889186/y63nhfzg3vyzqqvuysrt.png', width='40px', height='40px')
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    tr
+                                        td(style="text-align: left;", colspan='6')
+                                            div(style='font-size: 14px; padding-top: 40px; color: #767676; padding-bottom: 8px;') © 2021 1mg, All rights reserved
+                                            div(style='font-size: 12px; color: #a9a9a9;') Tower -B-46/4, 5th floor, Presidency Building, Mehrauli Gurgaon Road, Sector-14, Gurugram, Haryana 122001 India

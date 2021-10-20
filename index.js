@@ -27,34 +27,6 @@ app.get("/expired", (req, res) => {
     res.render("renewals/expired");
 });
 
-app.get("/header", (req, res) => {
-    res.render("components/header");
-});
-
-app.get("/greeting", (req, res) => {
-    res.render("components/greeting");
-});
-
-app.get("/offer", (req, res) => {
-    res.render("components/offer");
-});
-
-app.get("/footer-text", (req, res) => {
-    res.render("components/footer-text");
-});
-
-app.get("/footer", (req, res) => {
-    res.render("components/footer");
-});
-
-app.get("/recap", (req, res) => {
-    res.render("components/recap");
-})
-
-app.get("/hello", (req, res) => {
-    res.render("components/hello");
-})
-
 app.get("/example", (req, res) => {
     res.render("example");
 })
@@ -66,6 +38,14 @@ app.get("/confirm", (req, res) => {
 app.get("/cancel", (req, res) => {
     res.render("invoice/cancel");
 })
+
+app.get("/cp/renewal", (req, res) => {
+    res.render("cp/renewal");
+});
+
+app.get("/cp/onboard", (req, res) => {
+    res.render("cp/onboarding");
+});
 
 // Listening our app on port 3000
 app.listen(3000);

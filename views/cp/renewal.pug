@@ -1,4 +1,4 @@
-- var ctaLink = book_a_lab_test_url
+- var ctaLink = my_care_plan_url
 doctype html
 html
     head
@@ -6,7 +6,7 @@ html
         | &#x9;
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
         | &#x9;
-        title Cancellation
+        title Renewal Mailer
         | &#x9;
         link(href='https://fonts.googleapis.com/css?family=Poppins:400,600,700,800&display=swap', rel='stylesheet')
         | &#x9;
@@ -32,21 +32,20 @@ html
                         td(style='padding-top: 16px; padding-left: 16px;', width="80%")
                             img(style='height: 30px; width: 98px;', alt='', src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1627924999/cfx18yefzgoclhoyvmjh.png')
                         td(style='padding-top: 16px; padding-right: 16px; text-align: right;', width="20%")
-                            img(style='height: 30px; width: 129px;', alt='', src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1627923983/bbhxsxwbcmaam4brayyw.png')
+                            img(style='height: 24px; width: 103px;', alt='', src='https://res.cloudinary.com/dusqx2w0c/image/upload/v1634731641/aeguwizguobb6g2fqf6t.png')
                     | &#x9;&#x9;&#x9;&#x9;
                     tr
-                        td(style="padding: 16px 16px 0px 16px;", colspan="2", width="100%")
+                        td(style="padding: 16px 0px 0px 0px;", colspan="2", width="100%")
                             hr(style="border:0px; border-top: 1px solid #F0F0F0; height: 1px; color: #F0F0F0; background: #F0F0F0; margin:0px;")
                     | &#x9;&#x9;&#x9;&#x9;
                     tr
-                        td(style='padding: 26px 16px 16px 16px;', colspan="2", width='100%')
+                        td(style='padding: 16px;', colspan="2", width='100%')
                             div(style='text-align: center; font-family: Poppins, sans-serif;')
-                                img(height="100px", width="100px", src="https://res.cloudinary.com/dusqx2w0c/image/upload/v1629193319/h8y9nfzvuvhioglipdtx.png")
-                            div(style='font-size: 30px; font-weight: 600; text-align: center; padding-top: 18px;') Lab test benefit restored
-                            div(style='font-size: 24px; font-weight: 400; text-align: center; padding-top: 8px; color: #767676;') #{test_name} test cancelled
+                                img(height="100px", width="100px", src="https://res.cloudinary.com/dusqx2w0c/image/upload/v1634731553/divzyw82r23dwlhzx0ci.png")
+                            div(style='font-size: 24px; font-weight: 600; text-align: center; padding-top: 8px; line-height: 36px;') Care Plan membership renewed
                     | &#x9;&#x9;&#x9;&#x9;
                     tr
-                        td(style="padding: 0px 16px;", colspan="2", width='100%')
+                        td(colspan="2", width='100%')
                             hr(style="border:0px; border-top: 1px solid #F0F0F0; height: 1px; color: #F0F0F0; background: #F0F0F0; margin:0px;")
                     | &#x9;&#x9;&#x9;&#x9;
                     tr
@@ -54,75 +53,27 @@ html
                             table(cellpadding='0', cellspacing='0', border='0', width='100%')
                                 tbody
                                     tr
-                                        td(width='100%')
+                                        td(width='100%', colspan="2")
                                             div
                                                 div(style='font-weight: 500; font-size: 18px;') Hello Care Plan member,
-                                                div(style='font-size: 16px; font-weight: 400; padding-top: 16px;')
-                                                    | Your Care Plan lab test benefit has been restored to you membership as you have cancelled your 
-                                                    span(style="font-weight: 500;") #{test_name} test 
-                                                    | for 
-                                                    span(style="font-weight: 500;") #{date} 
-                                                    | between 
-                                                    span(style="font-weight: 500;") #{slot}. 
-                                                    | #{message}
-                                                div(style='font-size: 18px; font-weight: 500; padding-top: 32px;') #{tests_left}
-                                                div(style='margin-top: 16px; text-align: center; cursor: pointer; background-color: #FF6F61; width: 100%; border: none; border-radius: 4px; padding: 12px 0;')
-                                                    a(style='font-size: 20px; font-weight: 600; color: #ffffff;  cursor: pointer; text-decoration: none; margin-top: 20px;', href='{{ctaLink}}', target='_blank') Book a lab test
-                    if show_details
-                        | &#x9;&#x9;&#x9;&#x9;
-                        tr
-                            td(colspan="2" width='100%')
-                                hr(style="border:0px; border-top: 2px solid #F0F0F0; height: 2px; color: #F0F0F0; background: #F0F0F0; margin:0px;")
-                    if show_details
-                        | &#x9;&#x9;&#x9;&#x9;
-                        tr
-                            td(style="padding: 32px 16px 16px 16px; text-align: left; font-family: Poppins, sans-serif;", colspan="2", width="100%")
-                                div(style="font-size: 24px; font-weight: 600; color: #208376;") Refund initiated
-                                div(style="font-size: 18px; font-weight: 400; color: #767676; padding: 16px 0px;") Order ID : #{order_id}
-                        tr
-                            td(style="padding: 0px 16px 16px 16px; text-align: left; font-family: Poppins, sans-serif;", width="100%", colspan="2")
-                                table(cellpadding='0', cellspacing='0', border='0', width='100%')
-                                    tbody
-                                        tr 
-                                            td(style="text-align: left;" width="50%")
-                                                div(style="font-size: 18px; font-weight: 400;") Payment Mode
-                                            td(style="text-align: right;" width="50%") 
-                                                div(style="font-size: 18px; font-weight: 500;") #{payment_mode}
-                        | &#x9;&#x9;&#x9;&#x9;
-                        tr
-                            td(style='padding: 0px 16px;', colspan="2", width='100%')
-                                hr(style="border:0px; border-top: 1px solid #F0F0F0; height: 1px; color: #F0F0F0; background: #F0F0F0; margin:0px;")
-                        | &#x9;&#x9;&#x9;&#x9;
-                        tr
-                            td(style='padding: 16px 16px 32px 16px; text-align: left; font-family: Poppins, sans-serif;', colspan="2", width='100%' )
-                                table(cellpadding='0', cellspacing='0', border='0', width='100%')
-                                    tbody
-                                        tr
-                                            td(width='100%' colspan="2")
-                                                div(style='font-weight: 600; font-size: 20px;') Tata 1mg Labs
-                                        tr
-                                            td(style="padding-top: 16px;", width="50%")
-                                                div(style="font-size: 18px; font-weight: 400;") #{test_name} test
-                                            td(width="50%")
-                                                div(style="font-size: 18px; font-weight: 500; text-align: right;") ₹#{test_price}
-                                        tr
-                                            td(style="padding-top: 8px;", width="50%")
-                                                div(style="font-size: 18px; font-weight: 400;") Care Plan Discount
-                                            td(width="50%")
-                                                div(style="font-size: 18px; font-weight: 500; text-align: right; color: #208376;") (-)₹#{discount}
-                                        tr
-                                            td(style="padding-top: 8px;", width="50%")
-                                                div(style="font-size: 18px; font-weight: 400;") Collection Charges
-                                            td(width="50%")
-                                                div(style="font-size: 18px; font-weight: 500; text-align: right; color: #208376;") Free for members
-                                        tr
-                                            td(style='padding: 16px 0px;', colspan="2", width='100%')
-                                                hr(style='width: 100%; height: 1px; background-color: #f0f0f0; border: none;')
-                                        tr
-                                            td(width="50%")
-                                                div(style="font-size: 20px; font-weight: 600;") Refund amount
-                                            td(width="50%")
-                                                div(style="font-size: 20px; font-weight: 600; text-align: right;") ₹#{refund_amount}
+                                                div(style='font-size: 16px; font-weight: 400; padding-top: 16px;') To ensure you continue enjoying membership benefits, we have auto-renewed your plan for the next 3 months. We have also extended the validity on your unused benefits.
+                                    tr
+                                        td(style="padding: 16px 8px 0px 0px", width='10%') 
+                                            img(height="60px", width="60px", src="https://res.cloudinary.com/dusqx2w0c/image/upload/v1634731192/kb6madnhso9eevddpacb.png")
+                                        td(style="padding-top: 16px;", width="90%")
+                                            div(style="font-size: 16px; font-weight: 600; padding-bottom: 4px;") +1 Free Lab test
+                                            div(style="font-size: 14px; font-weight: 400;") Lab test remaining 2
+                                    tr
+                                        td(style="padding: 16px 8px 22px 0;", width='10%') 
+                                            img(height="60px", width="60px", src="https://res.cloudinary.com/dusqx2w0c/image/upload/v1634731242/pqzo6un9ofqlplckekbd.png")
+                                        td(style="padding-top: 16px; padding-bottom: 22px;", width="90%")
+                                            div(style="font-size: 16px; font-weight: 600; padding-bottom: 4px;") +1 Free E-Consultation
+                                            div(style="font-size: 14px; font-weight: 400;") E-consult remaining 1
+                                    tr
+                                        td(width="100%", colspan="2")
+                                            div(style='margin-bottom: 32px; text-align: center; cursor: pointer; background-color: #FF6F61; width: 100%; border: none; border-radius: 4px; padding: 12px 0;')
+                                                a(style='font-size: 20px; font-weight: 600; color: #ffffff;  cursor: pointer; text-decoration: none; margin-top: 20px;', href='{{ctaLink}}', target='_blank') Go to my care plan page
+
                     | &#x9;&#x9;&#x9;&#x9;
                     tr
                         td(colspan="2", width='100%')
