@@ -47,5 +47,9 @@ app.get("/cp/onboard", (req, res) => {
     res.render("cp/onboarding");
 });
 
+app.get("/cp/active", (req, res) => {
+    res.render("cp/activation");
+});
+
 // Listening our app on port 3000
 app.listen(3000);
